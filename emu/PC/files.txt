@@ -1,0 +1,54 @@
+
+q8_emu.h
+	型
+	レジスタ名
+
+q8_main.h
+q8_boot.h
+q8_core.h
+q8_execute.h
+q8_mmu.h
+
+hw_config.h
+memory.h
+bios.h
+
+
+q8_main.c
+	エミュレータmain	
+
+q8_boot.c
+	ブートコード
+
+q8_core.c
+	ハードウエアリセット
+	実行関数の呼び出し
+	CPの更新
+	例外のトラップ
+
+q8_execute.c
+	インストラクションの実行
+	レジスタの更新
+	フラグの更新
+
+q8_mmu.c
+	MMU
+
+hw_config.c
+	エミュレーション環境ハードウエア設定
+
+memory.c
+	メモリー関連
+
+bios.c
+	BIOSエミュレーション
+
+monitor.c
+	モニターデバッガ
+	ステップ実行
+	ディスアセンブル
+
+mk.bat
+
+VS2013 Project
+N:\projects\qv8_workspace01\q8emu_86\q8emu_86\q8_core.c

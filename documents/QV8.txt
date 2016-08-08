@@ -1,0 +1,634 @@
+
+QV8
+
+
+○概要
+QV80インストラクション下位互換、単純なアーキテクチャ。
+コンパイラが出力するインストラクションは限られているので、コンパイラの吐くコード優先で設計する。
+CC500の吐き出すコード密度優先
+ARM Cortex-M4エミュレータで10MHz動作を目指す。
+
+
+
+参考：TCC,micro-c,cc500
+
+参考：
+TCC,micro-c,cc500
+PopekとGoldbergの仮想化要件
+RISC-V
+
+reading_cc500_c.txt
+
+コードサイズ優先
+int=16ビットにしただけで、cc500の吐くコードはけっこ小さくなる。
+なので、スタックトップ演算命令は特に設けない。
+	命令によっては、余ったアドレッシングモードに追加するかもしれまい。
+	ただし、ロード/ストアを崩さないように、メモリの書き換えはしない。
+
+少ないリソースでセルフ開発環境を整えたいので、最適化に頼らなくてもコードサイズの小さいコードが吐けるように。
+
+
+○アーキテクチャ
+８ビットマイクロコンピュータ
+
+データバス8ビット、アドレスバス16ビット
+28ピンパッケージ用、データ/アドレスマルチプレクス版
+	ad0-ad7,a8-a17,#reset,#int,clock,io/m,r,w,strobe,ale,Vss,Vdd
+80系バス
+I/O専用命令
+リトルエンディアン
+スタックは上位から下位へ伸びる
+
+ロードストアアーキテクチャ
+　だけど、ld,st以外にpush/popとIO命令がメモリアクセスを行う。
+
+乗除算命令
+　符号付き、無し16:16->32ビット乗除算命令
+
+
+
+○その他アイデア
+
+ページは１つのタスクは64Kを超えてアロケート出来る。
+マップはOSのファンクションコールで。
+アドレス0は読み書き禁止、フォルト起こすぞ。
+
+
+○コアアーキテクチャ
+
+内部16bit
+バス8bitで内部16bit、バス16bitに拡張された場合16bitプロセッサになる。
+
+汎用レジスタ
+16ビットデータレジスタx4	8ビットレジスタx8として使用可
+16ビットアドレスレジスタx4
+
+16ビットスタックポインタ
+16ビットコードポインタ
+16ビットフラグレジスタ
+
+w0-w3 : b0-b7
+a0-a3
+sp	Stack Pointer
+cp	Code Pointer
+cr	Condition Register
+sr	System Register
+b0,w0,a0は特定の命令でデフォルトで指定される。
+
+
+
+・Condition Register
+
+
+bit15 : 
+bit14 :
+bit13 : 
+bit12 : 
+bit11 : 
+bit10 :
+bit9  :
+bit8  :
+
+bit7  : Sign
+bit6  : Zero
+bit5  : 
+bit4  : 
+bit3  : Overflow
+bit2  : 
+bit1  : 
+bit0  : Carry
+
+
+・System Register
+
+bit15 : MMU Enable 1:Enable r/w
+bit14 :
+bit13 :
+bit12 : Taskno bit4 r/w
+bit11 : Taskno bit3 r/w
+bit10 : Taskno bit2 r/w
+bit9  : Taskno bit1 r/w
+bit8  : Taskno bit0 r/w
+
+bit7  : SystemMode
+bit6  :
+bit5  : Single Step r/w
+bit4  : 
+bit3  :
+bit2  : FIRQ Enable r/w
+bit1  : IRQ Enable  r/w
+bit0  :
+
+
+
+○インストラクション表
+
+表記
+　インテル系表記、オペランドは dist,srcの順
+　間接アドレッシングは[addr]
+
+reg レジスタ w0-w3,a0-a3,b0-b8
+dreg データレジスタ w0-w3,b0-b8
+areg アドレスレジスタ a0-a3
+wreg ワード幅レジスタ w0-w3,a0-a3
+
+
+
+
+○インストラクション
+
+・ロード/ストア
+ld
+　メモリからのロード
+
+st
+　メモリへストア
+
+
+・データ移動
+mov
+movs
+　レジスタ間コピー
+
+movi
+　即値ロード
+
+xchg
+　交換
+
+
+・算術演算
+
+inc
+inc2
+dec
+dec2
+add
+adc
+sub
+sbb
+
+cmp
+　比較
+
+neg reg
+	reg<-not reg
+	reg++
+	符号反転
+
+
+・乗除算
+mul
+mul imm16
+mulu
+mulu imm16
+
+div
+div imm16
+divu
+divu imm16
+
+
+
+・拡張
+
+exts
+	符号拡張
+オペランドの下位8ビットの符号を上位8ビットに拡張する。
+
+extz
+	ゼロ拡張
+0をオペランドの上位8ビットに拡張する。
+
+
+
+・論理演算
+
+not
+　ビット反転
+
+and
+　論理AND
+
+or
+　論理OR
+
+xor
+　論理XOR
+
+
+test
+　ビットテスト
+
+
+
+・スタック
+
+push
+
+pop
+
+
+・分岐
+
+jcc imm8
+　コンディションジャンプ
+
+jmpcc
+　コンディションjump
+
+jrz
+　レジスタが0の時jump
+
+jump
+call
+ret
+
+
+・算術右シフト、左シフト
+shr r
+shl r
+
+
+・サブルーチン
+
+call imm
+	push cp
+	cp+=imm
+
+immはsigned
+
+call a0
+	push cp
+	cp+=a0
+
+ent imm8
+	push a3
+	a3<-sp
+	sp-=imm8
+
+a3をpushし、spをa3にコピーします。次にスタックにローカル変数用の領域を作成する。
+
+
+lve
+	sp<-a3
+	pop a3
+
+ローカル変数領域を開放する。
+imm8で指定した引数領域も同時に開放する。
+
+ret
+	pop cp
+
+ret imm8
+	pop cp
+	sp+=imm8
+引数が可変長でない場合、引数の領域は呼ばれた側で開放する事が出来る。
+Pascal呼び出し規約の場合など。
+
+
+
+
+・ソフトウエア割り込み
+int imm8
+
+int8	single step
+
+
+
+
+・割り込みからの復帰
+iret
+
+・テスト＆セット
+
+・入出力
+in reg,mem
+in reg,[imm]
+out mem,reg
+out [imm],reg
+
+・cas
+Compare And Swap.
+
+if[a0]==w0 then [a0]=w1,carry=0;
+else carry=1;
+
+・tas
+Test And Set
+
+
+
+○ポストフィックスのある命令
+
+・１オペランド
+not
+neg
+0wrrr000
+
+ext
+0srrr000
+
+s=0:zero extend
+  1:sign extend
+
+wレジスタの下位8ビットの符号、又は０を上位8ビットに拡張する。
+
+inc/dec(0x94)
+inc
+0wrrr0SS
+
+dec
+0wrrr1SS
+
+SS=00:1
+   01:2
+   10:4
+   11:reserved
+
+push/pop(0x95)
+push
+0wrrrr00
+
+pop
+0wrrrr10
+
+rrrr:wreg,sysreg
+
+
+・２オペランド
+xchg(0x93)
+0wdddsss reg,reg
+
+mov1
+cmp(0x9c)
+add
+sub
+and
+or
+xor
+test
+0wdddsss reg,reg
+1w000rrr reg,imm8/16
+
+
+
+・固定オペランド
+mul,mulu
+w1:w0<-w0*w1
+
+mul,mulu imm16
+w1:w0<-w0*imm16
+
+div,divu
+w1...w0<-w0/w1
+
+div,divu imm16
+w1...w0<-w0/imm16
+
+
+・２オペランド
+mov2(0x88)
+
+
+・２オペランド16ビットシステムレジスタ対応
+
+movs(0x90)
+0drrrsss
+
+d=0:r<-s
+  1:s<-r
+
+rrr
+ 000-111 wreg
+sss
+ 000-111 cp,scp,sp,ssp,cr,scr,sr,U
+
+
+
+・２オペランド、アドレッシング
+ld ex1(0x08)
+st ex1(0x18)
+wdddaaoo reg,[areg+wreg_oo] 
+
+ld ex2(0x0c)
+st ex2(0x1c)
+00wdddaa reg,[areg]
+01wdddip imm8 reg,[sreg+imm]
+10wdddaa imm8 reg,[areg+imm8]
+11wdddaa imm16 reg,[areg+imm16]
+
+p=0:cp
+  1:sp
+
+i=0:imm8
+  1:imm16
+
+imm8/16=signed
+
+shift(0x98)
+0DrrrrRR
+10DrrrCC
+110rrrRR sar rrr,RR
+111Dwrrr imm8
+
+D=0:shl
+  1:shr
+
+rrr=wreg
+
+CC=1-4
+
+RR=w0-w3(下位8ビット)
+
+・条件付き
+
+jcc(0xc0-0xc8)
+1バイト命令でccの時次の命令をスキップする。
+
+setcc(0xcd)
+ccccの時rrrを1にセット、それ以外は0にクリア
+ccccwrrr
+
+jmpcc(0xcc)
+cccc000w imm8/16
+cccc1CCC
+
+
+
+cccc=0000:l
+     0001:le
+     0010:ge
+     0011:g
+     0100:a
+     0101:ae/nc
+     0110:be
+     0111:b/c
+     1000:e
+     1001:ne
+     1010:o
+     1011:no
+     1100:s
+     1101:ns
+     1110:
+     1111:
+
+CCC=1-8:1-8
+
+jrz reg(0xce)
+w0000rrr
+
+・その他
+
+cas
+　Compare and Set
+　[a0]がb0と同じだった場合[a0]にb1を書き込む。
+　読み込んだ値がb0に入る。
+　書き込みが成功した場合CF=1、書き込まなかった場合CF=0
+
+
+
+○リセット
+QV8はリセットピンがアサートされている間、すべてのピンをHi-Zにする。
+リセットピンが開放されたらベクタ０に飛ぶ。
+
+
+○割り込みベクタ
+割り込みベクタは64Kメモリの最上位からの２バイトづつにアドレスが格納されている。
+ページ15
+$ffff-$fffe ベクタ0 リセット
+$fffd-$fffc ベクタ1 irq#
+...
+$fff1-$fff0 ベクタ7 firq#
+$ffef-$ffee ベクタ8 ブレークポイント
+$ffed-$ffec ベクタ9 シングルステップ
+...
+$ffe3-ffe2 ベクタ14
+$ffe1-ffe0 ベクタ16
+
+
+int
+	TASK<-0
+	fsys<-1
+	push cp
+	push w0
+	push w1
+	push a0
+	push a1
+
+ソフトウエアインタラプト
+
+firq
+	TASK←0
+	fsys←1
+	push cp
+	cp<-[$fff1]:[$fff0]@絶対アドレス　@@@下位に置いたほうがよいのでは？
+高速割り込み
+
+
+
+○MMU
+4K*256ページ=タスクあたり1MByteの実メモリを割り当て可能、うち16ページを同時に実メモリ空間にMAP出来る。
+仮想記憶で16MBytes(4K*4Kページ)
+
+ページ0-7,15はシステムで予約
+0:0に初期化されたページ、書き込時にTRAPを発生、実メモリをアロケートして割り付ける。
+1:タスク管理用
+-7:OS本体
+15:ベクタテーブル、ブート、BIOS
+
+タスクあたり64Kの空間に割り当てられた実メモリ16ページ
+タスク切り替えの時にMMUが切り替える。
+
+
+
+○スタックサイズビット
+　スタックアンダーフロー・オーバーフロー割り込み
+
+
+○ステージ
+　フェッチ
+　デコード
+　ロード/ストア
+　ライトバック
+
+○マイクロコード
+
+
+○ピン
+VSS
+VDD
+CLKin
+D0-D7
+A0-A15(A16-A19)
+#Reset
+#nmi
+#firq
+#irq
+R/#W
+Strobe
+MEM/#IO
+S0、S1	プロセッサ内部の状態
+#irqa
+#DMAReq
+
+
+○TK-Q8
+
+
+DEV-BOARD
+
+シリアルコンソール
+
+QV-DOS
+
+32ビット対応インストラクションの拡張領域を確保しておく。
+
+○周辺IC
+
+アドレスデコーダ
+ROM/RWM
+タイマ
+割り込みコントローラ
+シリアル／パラレルインターフェイス
+DMAコントローラ
+MMU　4kページ*256=1MBytes
+ http://www.mindspring.com/~thasegaw/rpcg/os9_mmu.html
+
+I/Oポート$f000-
+ 
+
+バス接続のディスク装置
+
+80系バス
+
+
+
+
+VRAMは80*25のアトリビュート付きキャラクターVRAMのみ（VRAM4K）
+　GVRAMがほしいなら回路外付け、もう１こQV8をつけるかepsonのアレをつなげる。
+
+あくまでも6800の例だけど、load/storeが多い、レジスタが少ないせいもあるか？
+Instruction Class		Percent Usage
+Loads					23.4
+Stores					15.3
+Subroutine calls
+ and returns			13.0
+Conditional branches	11.0
+Unconditional branches
+ and jumps 				6.5
+Compares and tests 		6.2
+Increments
+ and decrements 		6.1
+Clear 					4.4
+Adds and subtracts 		2.8
+All others 				11.3
+
+Table 1: 6800 instruction types based on static analysis of
+25,000 lines of 6800 source code. In static analysis the
+actual number of occurrences of each instruction is tallied
+from program listings. In the alternate technique,
+called dynamic analysis, the numbers of occurrences of
+an instruction is tallied while the program is running. An
+instruction inside a program loop would therefore be
+counted more than once.
