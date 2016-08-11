@@ -1,0 +1,22 @@
+05:25:53 **** Incremental Build of configuration Debug for project Q8Emu_KV58 ****
+make -j8 all 
+Building file: ../board/clock_config.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKV58F1M0VLQ24" -DFSL_RTOS_BM -I../CMSIS -I../board -I../drivers -I../startup -I../utilities -std=gnu99 -MMD -MP -MF"board/clock_config.d" -MT"board/clock_config.o" -c -o "board/clock_config.o" "../board/clock_config.c"
+Finished building: ../board/clock_config.c
+ 
+Building target: Q8Emu_KV58.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -T "../MKV58F1M0xxx24_flash.ld" -Xlinker --gc-sections -Wl,-Map,"Q8Emu_KV58.map" --specs=nano.specs -specs=nosys.specs -Xlinker -z -Xlinker muldefs -o "Q8Emu_KV58.elf"  ./utilities/fsl_debug_console.o ./utilities/fsl_notifier.o ./utilities/fsl_sbrk.o ./utilities/fsl_shell.o  ./startup/startup_MKV58F24.o ./startup/system_MKV58F24.o  ./source/main.o  ./drivers/fsl_adc16.o ./drivers/fsl_aoi.o ./drivers/fsl_clock.o ./drivers/fsl_cmp.o ./drivers/fsl_common.o ./drivers/fsl_crc.o ./drivers/fsl_dac.o ./drivers/fsl_dmamux.o ./drivers/fsl_dspi.o ./drivers/fsl_dspi_edma.o ./drivers/fsl_edma.o ./drivers/fsl_enet.o ./drivers/fsl_ewm.o ./drivers/fsl_flash.o ./drivers/fsl_flexbus.o ./drivers/fsl_flexcan.o ./drivers/fsl_flexcan_edma.o ./drivers/fsl_ftm.o ./drivers/fsl_gpio.o ./drivers/fsl_hsadc.o ./drivers/fsl_i2c.o ./drivers/fsl_i2c_edma.o ./drivers/fsl_llwu.o ./drivers/fsl_lptmr.o ./drivers/fsl_mpu.o ./drivers/fsl_pdb.o ./drivers/fsl_pit.o ./drivers/fsl_pmc.o ./drivers/fsl_pwm.o ./drivers/fsl_rcm.o ./drivers/fsl_sim.o ./drivers/fsl_smc.o ./drivers/fsl_trng.o ./drivers/fsl_uart.o ./drivers/fsl_uart_edma.o ./drivers/fsl_wdog.o ./drivers/fsl_xbara.o ./drivers/fsl_xbarb.o  ./board/board.o ./board/clock_config.o ./board/pin_mux.o   
+Finished building target: Q8Emu_KV58.elf
+ 
+Invoking: Cross ARM GNU Create Flash Image
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-objcopy -O ihex "Q8Emu_KV58.elf"  "Q8Emu_KV58.hex"
+arm-none-eabi-size --format=berkeley "Q8Emu_KV58.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8032	    108	   2316	  10456	   28d8	Q8Emu_KV58.elf
+Finished building: Q8Emu_KV58.hex
+Finished building: Q8Emu_KV58.siz
+ 
+ 

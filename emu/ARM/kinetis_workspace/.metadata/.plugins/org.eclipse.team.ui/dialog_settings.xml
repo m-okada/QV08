@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SynchronizeViewSettings">
+		<item value="false" key="linkWithEditor"/>
+		<item value="1470692307315" key="lastactiveparticipant_sec_id"/>
+		<item value="org.eclipse.egit.ui.modelCompareParticipant" key="lastactiveparticipant_id"/>
+		<section name="org.eclipse.egit.ui.modelCompareParticipant.1470692307315">
+		</section>
+	</section>
+	<section name="SynchronizeWizard">
+		<item value="org.eclipse.egit.ui.wizard1" key="org.eclipse.team.uiGlobalRefreshWizardSelectionPage.default_selection"/>
+	</section>
+</section>

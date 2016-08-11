@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syncparticipants>
+<participant displayName="Git (t02, RemoteSy...es, Q8Emu_KV58)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1470692307315">
+<data forceFetch="false" root="false">
+<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="t02, RemoteSy...es, Q8Emu_KV58" startupAction="none">
+<org.eclipse.team.ui.MODEL_PARTICIPANT_REFRESH_SCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
+<org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS modelProviderId="org.eclipse.core.resources.modelProvider">
+<mappings>
+<resources resourcePath="/t02" resourceType="4"/>
+<resources resourcePath="/RemoteSystemsTempFiles" resourceType="4"/>
+<resources resourcePath="/Q8Emu_KV58" resourceType="4"/>
+</mappings>
+</org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS>
+</org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS>
+<gitSynchronizeData container="K:/home/projects/QV08/emu/ARM/kinetis_workspace/Q8Emu_KV58" dstRev="refs/remotes/origin/master" inludeLocal="false" srcRev="HEAD"/>
+</data>
+</participant>
+</syncparticipants>
