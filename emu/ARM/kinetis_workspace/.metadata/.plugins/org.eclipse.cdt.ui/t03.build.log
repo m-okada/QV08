@@ -1,0 +1,11 @@
+08:59:46 **** Incremental Build of configuration Debug for project t03 ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "t03.elf"
+   text	   data	    bss	    dec	    hex	filename
+  17688	    128	   1488	  19304	   4b68	t03.elf
+Finished building: t03.siz
+ 
+
+08:59:47 Build Finished (took 216ms)
+

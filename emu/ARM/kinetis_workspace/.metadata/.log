@@ -510,3 +510,290 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.cdt.core 1 0 2016-08-10 13:54:56.691
 !MESSAGE Indexed 'mk22f' (48 sources, 120 headers) in 1.83 sec: 14,524 declarations; 40,751 references; 0 unresolved inclusions; 147 syntax errors; 566 unresolved names (1%)
+!SESSION 2016-08-12 07:33:33.546 -----------------------------------------------
+eclipse.buildId=3.2.0.201603041649
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Framework arguments:  -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-08-12 07:33:37.500
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\nic'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2016-08-12 07:33:37.853
+!MESSAGE External elements location C:\Freescale\KDS_v3\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2016-08-12 07:34:06.419
+!MESSAGE External elements location C:\Freescale\KDS_v3\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 2 0 2016-08-12 07:35:04.619
+!MESSAGE Error parsing metadata repository
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2016-08-12 07:35:04.619
+!MESSAGE Error in file:/C:/Freescale/KDS_v3/eclipse/p2/org.eclipse.equinox.p2.repository/cache/content-783366767.jar at line 6018, column 45: Missing required attribute in "unit": id
+!SESSION 2016-08-12 07:35:53.872 -----------------------------------------------
+eclipse.buildId=3.2.0.201603041649
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Framework arguments:  -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2016-08-12 07:35:58.928
+!MESSAGE External elements location C:\Freescale\KDS_v3\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-08-12 07:35:59.308
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\nic'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2016-08-12 07:36:52.170
+!MESSAGE External elements location C:\Freescale\KDS_v3\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY com.freescale.processorexpert.core 2 0 2016-08-12 07:37:28.407
+!MESSAGE Attempting to add the TypesFile PackageZip@C:\Freescale\KDS_v3\eclipse\ProcessorExpert\Repositories\KSDK120_KV5XF_100_Repository\CPUs\CPUs_10050600.pez\CPUs\_Kinetis_4SDK\FlashOrgDscr.tps which is already present in the TypesFileCollection. TypesFile not added.
+
+!ENTRY com.freescale.processorexpert.core 2 0 2016-08-12 07:37:33.484
+!MESSAGE Attempting to add the TypesFile PackageZip@C:\Freescale\KDS_v3\eclipse\ProcessorExpert\Repositories\KSDK120_KV5XF_100_Repository\CPUs\CPUs_10050600.pez\CPUs\_Kinetis_4SDK\FlashOrgDscr.tps which is already present in the TypesFileCollection. TypesFile not added.
+
+!ENTRY com.freescale.processorexpert.core 2 0 2016-08-12 07:37:51.721
+!MESSAGE Attempting to add the TypesFile PackageZip@C:\Freescale\KDS_v3\eclipse\ProcessorExpert\Repositories\KSDK120_KV5XF_100_Repository\CPUs\CPUs_10050600.pez\CPUs\_Kinetis_4SDK\FlashOrgDscr.tps which is already present in the TypesFileCollection. TypesFile not added.
+
+!ENTRY com.freescale.processorexpert.core 2 0 2016-08-12 07:37:51.754
+!MESSAGE Attempting to add the TypesFile PackageZip@C:\Freescale\KDS_v3\eclipse\ProcessorExpert\Repositories\KSDK120_KV5XF_100_Repository\CPUs\CPUs_10050600.pez\CPUs\_Kinetis_4SDK\FlashOrgDscr.tps which is already present in the TypesFileCollection. TypesFile not added.
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-08-12 07:37:55.169
+!MESSAGE Indexed 't03' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:49:56.532
+!MESSAGE Request monitor: 'Sequence "", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:49:56.532
+!MESSAGE Request monitor: 'Sequence "Initializing debugger services", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:49:56.533
+!MESSAGE Request monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@fab18f): Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY com.pemicro.debug.gdbjtag.pne 4 5012 2016-08-12 07:49:56.537
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:582)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.access$4(Sequence.java:574)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:431)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:425)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:388)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:313)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 com.pemicro.debug.gdbjtag.pne 8 1 2016-08-12 07:49:56.537
+!MESSAGE Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:50:06.798
+!MESSAGE Request monitor: 'Sequence "", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:50:06.799
+!MESSAGE Request monitor: 'Sequence "Initializing debugger services", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:50:06.799
+!MESSAGE Request monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@142c460): Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY com.pemicro.debug.gdbjtag.pne 4 5012 2016-08-12 07:50:06.799
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:582)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.access$4(Sequence.java:574)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:431)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:425)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:388)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:313)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 com.pemicro.debug.gdbjtag.pne 8 1 2016-08-12 07:50:06.799
+!MESSAGE Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:50:40.883
+!MESSAGE Request monitor: 'Sequence "", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:50:40.883
+!MESSAGE Request monitor: 'Sequence "Initializing debugger services", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:50:40.883
+!MESSAGE Request monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@150539d): Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY com.pemicro.debug.gdbjtag.pne 4 5012 2016-08-12 07:50:40.884
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:582)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.access$4(Sequence.java:574)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:431)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:425)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:388)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:313)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 com.pemicro.debug.gdbjtag.pne 8 1 2016-08-12 07:50:40.884
+!MESSAGE Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:51:14.905
+!MESSAGE Request monitor: 'Sequence "", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:51:14.905
+!MESSAGE Request monitor: 'Sequence "Initializing debugger services", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:51:14.905
+!MESSAGE Request monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@102f90b): Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY com.pemicro.debug.gdbjtag.pne 4 5012 2016-08-12 07:51:14.906
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:582)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.access$4(Sequence.java:574)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:431)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:425)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:388)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:313)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 com.pemicro.debug.gdbjtag.pne 8 1 2016-08-12 07:51:14.906
+!MESSAGE Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:52:12.293
+!MESSAGE Request monitor: 'Sequence "", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:52:12.294
+!MESSAGE Request monitor: 'Sequence "Initializing debugger services", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 07:52:12.294
+!MESSAGE Request monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@15471b2): Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running. null, even though the request is not set to cancel.
+
+!ENTRY com.pemicro.debug.gdbjtag.pne 4 5012 2016-08-12 07:52:12.295
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:582)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.access$4(Sequence.java:574)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:431)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:425)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:388)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:313)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 com.pemicro.debug.gdbjtag.pne 8 1 2016-08-12 07:52:12.295
+!MESSAGE Failed to launch GDB server. Please check that another instance of pegdbserver_console.exe is not running.
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-08-12 08:51:45.829
+!MESSAGE Indexed 'MK10_t01' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 09:01:47.139
+!MESSAGE Request for monitor: '*running,thread-id="all"
+*stopped,reason="end-stepping-range",frame={addr="0x000004ec",func="main",args=[],file="../Sources/main.c",fullname="K:\home\projects\QV08\emu\ARM\kinetis_workspace\MK10_t01\Sources\main.c",line="60"},thread-id="1",stopped-threads="all"
+40^error,msg="No symbol "pxReadyTasksLists" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-08-12 09:01:47.139
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression sizeof(pxReadyTasksLists)
+Error message from debugger back end:
+No symbol "pxReadyTasksLists" in current context.
+!STACK 0
+java.lang.Exception: No symbol "pxReadyTasksLists" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 09:01:47.140
+!MESSAGE Request for monitor: '42^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-08-12 09:01:47.140
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 09:01:51.973
+!MESSAGE Request for monitor: '*running,thread-id="all"
+*stopped,reason="signal-received",signal-name="SIGINT",signal-meaning="Interrupt",frame={addr="0x000004ec",func="main",args=[],file="../Sources/main.c",fullname="K:\home\projects\QV08\emu\ARM\kinetis_workspace\MK10_t01\Sources\main.c",line="60"},thread-id="1",stopped-threads="all"
+47^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-08-12 09:01:51.973
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 09:11:45.784
+!MESSAGE Request for monitor: '39^error,msg="No symbol "pxReadyTasksLists" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-08-12 09:11:45.784
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression sizeof(pxReadyTasksLists)
+Error message from debugger back end:
+No symbol "pxReadyTasksLists" in current context.
+!STACK 0
+java.lang.Exception: No symbol "pxReadyTasksLists" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-08-12 09:11:45.784
+!MESSAGE Request for monitor: '40^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-08-12 09:11:45.784
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY com.freescale.processorexpert.core 2 0 2016-08-12 09:22:06.215
+!MESSAGE Attempting to add the TypesFile PackageZip@C:\Freescale\KDS_v3\eclipse\ProcessorExpert\Repositories\KSDK120_KV5XF_100_Repository\CPUs\CPUs_10050600.pez\CPUs\_Kinetis_4SDK\FlashOrgDscr.tps which is already present in the TypesFileCollection. TypesFile not added.
+
+!ENTRY com.freescale.processorexpert.core 2 0 2016-08-12 09:22:12.815
+!MESSAGE Attempting to add the TypesFile PackageZip@C:\Freescale\KDS_v3\eclipse\ProcessorExpert\Repositories\KSDK120_KV5XF_100_Repository\CPUs\CPUs_10050600.pez\CPUs\_Kinetis_4SDK\FlashOrgDscr.tps which is already present in the TypesFileCollection. TypesFile not added.
+
+!ENTRY com.freescale.processorexpert.core 2 0 2016-08-12 09:22:58.713
+!MESSAGE Attempting to add the TypesFile PackageZip@C:\Freescale\KDS_v3\eclipse\ProcessorExpert\Repositories\KSDK120_KV5XF_100_Repository\CPUs\CPUs_10050600.pez\CPUs\_Kinetis_4SDK\FlashOrgDscr.tps which is already present in the TypesFileCollection. TypesFile not added.
+
+!ENTRY com.freescale.processorexpert.core 2 0 2016-08-12 09:22:58.723
+!MESSAGE Attempting to add the TypesFile PackageZip@C:\Freescale\KDS_v3\eclipse\ProcessorExpert\Repositories\KSDK120_KV5XF_100_Repository\CPUs\CPUs_10050600.pez\CPUs\_Kinetis_4SDK\FlashOrgDscr.tps which is already present in the TypesFileCollection. TypesFile not added.
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-08-12 09:23:26.246
+!MESSAGE Indexed 'Q8Emu_KV58_SDK12' (23 sources, 79 headers) in 5.57 sec: 8,338 declarations; 20,088 references; 0 unresolved inclusions; 36 syntax errors; 533 unresolved names (1.8%)

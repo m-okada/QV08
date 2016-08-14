@@ -1,0 +1,11 @@
+08:03:40 **** Incremental Build of configuration Debug for project t02 ****
+make -j8 all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "t02.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22720	    124	  12972	  35816	   8be8	t02.elf
+Finished building: t02.siz
+ 
+
+08:03:40 Build Finished (took 215ms)
+

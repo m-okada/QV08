@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  Copyright : 2012 Freescale, Inc. All Rights Reserved.
+
+  This configuration file is a standard interchange file that's format is maintained
+  by Freescale, Inc. The configuration file is a derivative work
+  of the Processor Expert Software technology licensed for use by customers
+  as defined as SOFTWARE in the product's End User License Agreement. This file
+  and format are free to use and distribute for read-only purposes. You do not have
+  the right to create these files or modify this format or use for any purposes other
+  than interchange with the Processor Expert Software technology.
+
+  THIS SOFTWARE IS PROVIDED "AS IS".
+
+  NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT
+  LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  PURPOSE APPLY TO THIS SOFTWARE. IN NO EVENT WILL FREESCALE BE LIABLE, WHETHER
+  IN CONTRACT, TORT, OR OTHERWISE, FOR ANY INCIDENTAL, SPECIAL, INDIRECT,
+  CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR
+  ANY LOSS OF USE, LOSS OF TIME, INCONVENIENCE, COMMERCIAL LOSS, OR LOST PROFITS,
+  SAVINGS, OR REVENUES TO THE FULL EXTENT SUCH MAY BE DISCLAIMED BY LAW.
+
+-->
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ProjectInfoDescription.xsd">
+  <PROCESSOR>
+    <DeviceID>MKV58F1M0xxx22</DeviceID>
+    <CoreNum>1</CoreNum>
+    <Cores>
+      <Core>
+        <CoreSet>Cortex-M4</CoreSet>
+      </Core>
+    </Cores>
+    <SRAMsize>0</SRAMsize>
+    <FLASHsize>1M</FLASHsize>
+  </PROCESSOR>
+  <PATHS>
+    <LinkerCommandFile>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Project_Settings\Linker_Files\ProcessorExpert.ld</LinkerCommandFile>
+    <IncludePaths>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\inc\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\sim\MKV58F22\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\system\src\clock\MKV58F22\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\system\inc\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\osa\inc\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\drivers\inc\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\CMSIS\Include\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\MKV58F22\include\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\MKV58F22\startup\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\SDK\platform\devices\MKV58F22\startup\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Sources\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\</Path>
+    </IncludePaths>
+    <SourceCodePaths>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\MKV58F22\startup\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\drivers\src\uart\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\dmamux\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\lptmr\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\mcg\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\osc\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\port\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\sim\MKV58F22\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\uart\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\xbar\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\osa\src\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\system\src\clock\MKV58F22\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\system\src\clock\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\system\src\interrupt\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Sources\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Static_Code\System\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\MKV58F22\startup\gcc\</Path>
+    </SourceCodePaths>
+  </PATHS>
+  <FILES>
+    <GeneratedCs>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\Cpu.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\clockMan1.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\hardware_init.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\osa1.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\pin_mux.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\uartCom1.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\MKV58F22\startup\system_MKV58F22.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\startup.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\drivers\src\uart\fsl_uart_common.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\drivers\src\uart\fsl_uart_driver.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\dmamux\fsl_dmamux_hal.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\lptmr\fsl_lptmr_hal.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\mcg\fsl_mcg_hal.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\mcg\fsl_mcg_hal_modes.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\osc\fsl_osc_hal.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\port\fsl_port_hal.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\sim\MKV58F22\fsl_sim_hal_MKV58F22.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\uart\fsl_uart_hal.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\xbar\fsl_xbar_hal.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\osa\src\fsl_os_abstraction_bm.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\system\src\clock\MKV58F22\fsl_clock_MKV58F22.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\system\src\clock\fsl_clock_manager.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\system\src\clock\fsl_clock_manager_common.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\system\src\interrupt\fsl_interrupt_manager.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Sources\Events.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Sources\main.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Static_Code\System\PE_low_level_init.c</PathName>
+    </GeneratedCs>
+    <GeneratedHs>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\Cpu.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\PE_low_level_init.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\SDK\platform\devices\MKV58F22\startup\system_MKV58F22.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\board.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\clockMan1.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\osa1.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\pin_mux.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Generated_Code\uartCom1.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\CMSIS\Include\arm_common_tables.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\CMSIS\Include\arm_const_structs.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\CMSIS\Include\arm_math.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\CMSIS\Include\core_cm7.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\CMSIS\Include\core_cmFunc.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\CMSIS\Include\core_cmInstr.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\CMSIS\Include\core_cmSimd.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\MKV58F22\include\MKV58F22.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\MKV58F22\include\MKV58F22_extension.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\MKV58F22\include\MKV58F22_features.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\MKV58F22\include\fsl_bitaccess.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\fsl_device_registers.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\startup.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\drivers\inc\fsl_uart_driver.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\inc\fsl_dmamux_hal.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\inc\fsl_lptmr_hal.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\inc\fsl_mcg_hal.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\inc\fsl_mcg_hal_modes.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\inc\fsl_osc_hal.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\inc\fsl_port_hal.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\inc\fsl_sim_hal.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\inc\fsl_uart_hal.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\inc\fsl_xbar_hal.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\inc\fsl_xbar_signals.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\hal\src\sim\MKV58F22\fsl_sim_hal_MKV58F22.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\osa\inc\fsl_os_abstraction.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\osa\inc\fsl_os_abstraction_bm.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\system\inc\fsl_clock_manager.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\system\inc\fsl_interrupt_manager.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\system\src\clock\MKV58F22\fsl_clock_MKV58F22.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\Sources\Events.h</PathName>
+    </GeneratedHs>
+    <GeneratedASMs>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\t03\SDK\platform\devices\MKV58F22\startup\gcc\startup_MKV58F22.S</PathName>
+    </GeneratedASMs>
+  </FILES>
+  <OPTIONS>
+    <BuildOptions>
+      <CCoptList>
+        <Option>-D CPU_MKV58F1M0VLQ22</Option>
+        <Option>-D FSL_OSA_BM_TIMER_CONFIG=2</Option>  
+      </CCoptList>
+    </BuildOptions>
+  </OPTIONS>
+</export>

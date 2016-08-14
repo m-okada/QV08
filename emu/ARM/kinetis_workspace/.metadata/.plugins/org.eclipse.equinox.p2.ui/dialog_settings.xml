@@ -3,23 +3,16 @@
 	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.InstallWizard.WizardSettings">
 		<item value="870" key="DIALOG_WIDTH"/>
 		<item value="61" key="DIALOG_Y_ORIGIN"/>
-		<item value="342" key="DIALOG_X_ORIGIN"/>
 		<item value="607" key="DIALOG_HEIGHT"/>
+		<item value="342" key="DIALOG_X_ORIGIN"/>
 		<item value="1|MS UI Gothic|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|MS UI Gothic" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.InstallWizard.ResolutionResultsPage">
 		<item value="800" key="ListSashWeight"/>
 		<item value="400" key="NameColumnWidth"/>
-		<item value="200" key="DetailsSashWeight"/>
 		<item value="200" key="IDColumnWidth"/>
+		<item value="200" key="DetailsSashWeight"/>
 		<item value="200" key="VersionColumnWidth"/>
-	</section>
-	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.InstallWizard.SelectableIUsPage">
-		<item value="800" key="ListSashWeight"/>
-		<item value="300" key="NameColumnWidth"/>
-		<item value="200" key="DetailsSashWeight"/>
-		<item value="200" key="IDColumnWidth"/>
-		<item value="100" key="VersionColumnWidth"/>
 	</section>
 	<section name="AvailableIUsPage">
 		<item value="800" key="AvailableListSashWeight"/>
@@ -31,5 +24,12 @@
 		<item value="true" key="FilterOnEnv"/>
 		<item value="200" key="AvailableDetailsSashWeight"/>
 		<item value="true" key="ShowLatestVersionsOnly"/>
+	</section>
+	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.InstallWizard.SelectableIUsPage">
+		<item value="800" key="ListSashWeight"/>
+		<item value="300" key="NameColumnWidth"/>
+		<item value="200" key="IDColumnWidth"/>
+		<item value="200" key="DetailsSashWeight"/>
+		<item value="100" key="VersionColumnWidth"/>
 	</section>
 </section>

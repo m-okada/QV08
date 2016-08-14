@@ -1,0 +1,36 @@
+PINC is not C Langage.
+
+cc500から改造の範囲で、C言語のサブセット＋独自拡張。
+QV08プロセッサシステムで実時間コンパイルを目指す。
+クラッシュするコードなんか簡単に書ける、けどそれでクラッシュしないOS、OS-Q
+
+型
+int char long
+それぞれへのポインタ
+配列
+文字列
+
+intはchar*としても使える。
+funcは代入できるし、
+
+foo(){}
+boo(){}
+int bar ;
+bar=foo ;
+bar() ;	//	OK
+
+
+範囲演算子
+
+for(i=1..90%3){
+}
+
+
+
+
+continue-breakスタック
+offset=35
+
+ptr[2].offset
+
+
