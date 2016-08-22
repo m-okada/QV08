@@ -1,0 +1,32 @@
+No コマンド                 略号  CKE      /CS /RAS /CAS /WE DQM Address
+                                  n–1 n                          BA0, A10 A11,
+                                                                 BA1      A9-A0
+1 モード・レジスタ設定      MRS   H   x    L   L    L    L   x   L    L   V
+2 CBR（オート）リフレッシュ REF   H   H    L   L    L    H   x   x    x   x
+3 セルフ・リフレッシュ開始  SELF  H   L    L   L    L    H   x   x    x   x
+4 セルフ・リフレッシュ終了  －    L   H    L   H    H    H   x   x    x   x
+                                  L   H    H   x    x    x   x   x    x   x
+5 選択バンクのプリチャージ  PRE   H   x    L   L    H    L   x   V    L   x
+6 全バンクのプリチャージ    PALL  H   x    L   L    H    L   x   x    H   x
+7 バンク・アクティブ        ACT   H   x    L   L    H    H   x   V    V   V
+8 ライト                    WRIT  H   x    L   H    L    L   x   V    L   V
+9 ライト(AP)                WRITA H   x    L   H    L    L   x   V    H   V
+10 リード                   READ  H   x    L   H    L    H   x   V    L   V
+11 リード(AP)               READA H   x    L   H    L    H   x   V    H   V
+12 バースト・ストップ       BST   H   x    L   H    H    L   x   x    x   x
+13 ノー・オペレーション     NOP   H   x    L   H    H    H   x   x    x   x
+14 デバイス非選択           DESL  H   x    H   x    x    x   x   x    x   x
+15 データ入出力可能         −     H   x    x   x    x    x   L   x    x   x
+16 データ・マスク           −     H   x    x   x    x    x   H   x    x   x
+
+
+
+クロック安定問題
+
+SDRAMのクロックが最長1MHzまでなので、クロックを作ろうとすると、最低2MHzが欲しい。
+タイマーで作れないので、外からクロックあげて、エッジ待ちにしようか。
+必死にポート見てたらどのくらいまでおっけーなんだろう？実験
+　外バスクロックはコア220MHz動作で1/8の27.5MHzまで、なので10MHzくらいにしてテスト。
+
+
+

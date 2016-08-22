@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.50.001
 **     Repository  : KSDK 1.2.0 KV5XF 1.0.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-08-12, 09:23, # CodeGen: 0
+**     Date/Time   : 2016-08-22, 11:06, # CodeGen: 37
 **     Abstract    :
 **
 **     Settings    :
@@ -2214,9 +2214,19 @@
 **              fsl_xbar_hal                               : fsl_xbar_hal
 **              fsl_dmamux_hal                             : fsl_dmamux_hal
 **     Contents    :
-**         hardware_init          - void hardware_init(void);
-**         init_jtag_pins         - void init_jtag_pins(uint32_t instance);
-**         deinit_jtag_pins       - void deinit_jtag_pins(uint32_t instance);
+**         hardware_init           - void hardware_init(void);
+**         init_gpio_pins          - void init_gpio_pins(uint32_t instance);
+**         deinit_gpio_pins        - void deinit_gpio_pins(uint32_t instance);
+**         init_jtag_pins          - void init_jtag_pins(uint32_t instance);
+**         deinit_jtag_pins        - void deinit_jtag_pins(uint32_t instance);
+**         init_llwu_pins          - void init_llwu_pins(uint32_t instance);
+**         deinit_llwu_pins        - void deinit_llwu_pins(uint32_t instance);
+**         init_lptmr_pins         - void init_lptmr_pins(uint32_t instance);
+**         deinit_lptmr_pins       - void deinit_lptmr_pins(uint32_t instance);
+**         init_osc_pins           - void init_osc_pins(uint32_t instance);
+**         deinit_osc_pins         - void deinit_osc_pins(uint32_t instance);
+**         init_uart_pins          - void init_uart_pins(uint32_t instance);
+**         deinit_uart_pins        - void deinit_uart_pins(uint32_t instance);
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.

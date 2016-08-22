@@ -1,0 +1,42 @@
+/*
+ * sdram.c
+ *
+ *  Created on: 2016/08/21
+ *      Author: Manabu Okada
+ */
+
+/*
+                       /RAS /CAS /WE
+LOAD MODE REGISTER       L   L   L
+AUTO REFRESH             L   L   H  (Auto refresh or Self refresh)
+PRECHARGE                L   H   L  (Deactivate row)
+ACTIVE                   L   H   H  (Select bank / Active row)
+WRITE                    H   L   L  (Select bank/column , start write)
+READ                     H   L   H  (Select bank/column , start read)
+BURST TERMINATE          H   H   L
+NOP                      H   H   H
+
+*/
+
+/*
+
+
+ */
+
+#include "sdram_pin.h"
+#include "sdram.h"
+
+
+void sdram_init(void){
+	;
+}
+
+int sdram_read(int addr){
+	;
+
+	return 0 ;
+}
+
+void sdram_reflesh(int start_clmn){
+	;
+}

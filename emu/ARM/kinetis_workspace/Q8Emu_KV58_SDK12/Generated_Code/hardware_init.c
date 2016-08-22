@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.50.001
 **     Repository  : KSDK 1.2.0 KV5XF 1.0.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-08-12, 09:23, # CodeGen: 0
+**     Date/Time   : 2016-08-22, 11:06, # CodeGen: 37
 **     Abstract    :
 **
 **     Settings    :
@@ -2267,11 +2267,23 @@ void hardware_init(void) {
   /* Enable clock for PORTs */
     
   SIM_HAL_EnableClock(SIM,kSimClockGatePortA);
+  SIM_HAL_EnableClock(SIM,kSimClockGatePortB);
+  SIM_HAL_EnableClock(SIM,kSimClockGatePortC);
+  SIM_HAL_EnableClock(SIM,kSimClockGatePortD);
+  SIM_HAL_EnableClock(SIM,kSimClockGatePortE);
 
   /* Setup board clock source. */
-  g_xtal0ClkFreq = 0U;                  /* System oscillator 0 is not enabled */
+  g_xtal0ClkFreq = 20000000U;           /* Value of the external crystal or oscillator clock frequency of the system oscillator (OSC) in Hz */
   
+  init_gpio_pins(GPIOA_IDX);
+  init_gpio_pins(GPIOB_IDX);
+  init_gpio_pins(GPIOC_IDX);
+  init_gpio_pins(GPIOD_IDX);
   init_jtag_pins(JTAG_IDX);
+  init_llwu_pins(LLWU_IDX);
+  init_lptmr_pins(LPTMR0_IDX);
+  init_osc_pins(OSC0_IDX);
+  init_uart_pins(UART0_IDX);
 }
 
 /*!

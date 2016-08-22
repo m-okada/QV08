@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 01.00, CPU db: 3.50.001
 **     Repository  : KSDK 1.2.0 KV5XF 1.0.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-08-12, 09:23, # CodeGen: 0
+**     Date/Time   : 2016-08-22, 22:46, # CodeGen: 53
 **     Abstract    :
 **
 **
@@ -58,7 +58,7 @@
 #include "osa1.h"
 
 /* Timer period */
-#define OSA1_TIMER_PERIOD_US           1000U
+#define OSA1_TIMER_PERIOD_US           4000U
 /* Software ISR counter */
 static volatile uint16_t SwTimerIsrCounter = 0U;
 
@@ -73,7 +73,7 @@ static volatile uint16_t SwTimerIsrCounter = 0U;
 */
 void SysTick_Handler(void)
 {
-  SwTimerIsrCounter++;
+  SwTimerIsrCounter += 4U;
 }
 
 /*

@@ -1,4 +1,4 @@
-08:03:39 **** Incremental Build of configuration Debug for project mk22f ****
+22:34:25 **** Incremental Build of configuration Debug for project mk22f ****
 make -j8 all 
 Invoking: Cross ARM GNU Print Size
 arm-none-eabi-size --format=berkeley "mk22f.elf"
@@ -7,5 +7,5 @@ arm-none-eabi-size --format=berkeley "mk22f.elf"
 Finished building: mk22f.siz
  
 
-08:03:40 Build Finished (took 215ms)
+22:34:26 Build Finished (took 219ms)
 

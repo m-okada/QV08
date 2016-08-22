@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 01.00, CPU db: 3.50.001
 **     Repository  : KSDK 1.2.0 KV5XF 1.0.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-08-12, 09:23, # CodeGen: 0
+**     Date/Time   : 2016-08-22, 14:09, # CodeGen: 46
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -53,6 +53,20 @@
 
 #include "clockMan1.h"
 
+/*! @brief OSC Initialization Configuration Structure */  
+osc_user_config_t clockMan1_osc0_Config = {
+    .freq = 20000000U,
+    .range = kOscRangeVeryHigh,
+    .erefs = kOscSrcExt,
+
+    /*! @brief Configuration for OSCERCLK */
+    .oscerConfig = 
+    {
+        .enable = true,
+        .enableInStop = false,
+        .erclkDiv = 0U,
+    },
+}; 
 
 /* ************************************************************************* 
  * Configuration structure for Clock Configuration 0
@@ -62,7 +76,7 @@ clock_manager_user_config_t clockMan1_InitConfig0 = {
     /*! @brief Configuration of MCG */
     .mcgConfig =
     {
-        .mcg_mode = kMcgModeFEI, /*!< FEI mode */
+        .mcg_mode = kMcgModePEE, /*!< PEE mode */
         /* ------------------ MCGIRCCLK settings ---------------------- */
         .irclkEnable = true, /*!< MCGIRCLK enable */
         .irclkEnableInStop = false, /*!< MCGIRCLK enable in stop mode */
@@ -71,14 +85,14 @@ clock_manager_user_config_t clockMan1_InitConfig0 = {
             
         /* -------------------- MCG FLL settings ---------------------- */    
         .frdiv = 0, /*!< MCG_C1[FRDIV] */
-        .drs = kMcgDcoRangeSelLow, /*!< MCG_C4[DRST_DRS] */
+        .drs = kMcgDcoRangeSelHigh, /*!< MCG_C4[DRST_DRS] */
         .dmx32 = kMcgDmx32Default, /*!< MCG_C4[DMX32] */
             
         /* -------------------- MCG PLL settings ---------------------- */
-        .pll0EnableInFllMode = false, /*!< PLL0 enable in FLL mode */
+        .pll0EnableInFllMode = true, /*!< PLL0 enable in FLL mode */
         .pll0EnableInStop = false, /*!< PLL0 enable in stop mode */
-        .prdiv0 = 0U, /*!< PRDIV0 */
-        .vdiv0 = 0U, /*!< VDIV0 */
+        .prdiv0 = 1U, /*!< PRDIV0 */
+        .vdiv0 = 28U, /*!< VDIV0 */
     },       
      
     /*! @brief Configuration of OSCERCLK */
@@ -94,9 +108,9 @@ clock_manager_user_config_t clockMan1_InitConfig0 = {
     {
         .er32kSrc = kClockEr32kSrcOsc0, /*!< ERCLK32K source selection */
         .outdiv1 = 0U, /*!< OUTDIV1 setting */
-        .outdiv2 = 0U, /*!< OUTDIV2 setting */
-        .outdiv3 = 1U, /*!< OUTDIV3 setting */
-        .outdiv4 = 1U, /*!< OUTDIV4 setting */
+        .outdiv2 = 1U, /*!< OUTDIV2 setting */
+        .outdiv3 = 7U, /*!< OUTDIV3 setting */
+        .outdiv4 = 7U, /*!< OUTDIV4 setting */
     }
 };     
 

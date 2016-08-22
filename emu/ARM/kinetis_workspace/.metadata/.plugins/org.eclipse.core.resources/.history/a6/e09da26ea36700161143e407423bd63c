@@ -1,0 +1,38 @@
+/*
+ * sdram.c
+ *
+ *  Created on: 2016/08/21
+ *      Author: Manabu Okada
+ */
+
+
+#include "sdram_pin.h"
+#include "sdram.h"
+
+/*
+
+初期化
+モードレジスタ設定
+バーストリード
+ライト
+リフレッシュ
+
+読み込みキャッシュ
+ライトスルー
+
+*/
+
+
+void sdram_init(void){
+	;
+}
+
+int sdram_read(int addr){
+	;
+
+	return 0 ;
+}
+
+void sdram_reflesh(int start_clmn){
+	;
+}

@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+includes.beginExportsPattern=IWYU\\s+(pragma\:?\\s+)?begin_exports?
+includes.endExportsPattern=IWYU\\s+(pragma\:?\\s+)?end_exports?
+includes.exportPattern=IWYU\\s+(pragma\:?\\s+)?export
+includes.keepPattern=IWYU\\s+(pragma\:?\\s+)?keep
+includes.privatePattern=IWYU\\s+(pragma\:?\\s+)?private(,\\s+include\\s+(?<header>\\S+))?
+org.eclipse.cdt.core.showSourceRootsAtTopLevelOfProject=true

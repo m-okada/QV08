@@ -155,6 +155,14 @@ Module "pin_mux"   (component PinSettings)
                 provides pin initialization for selected pins during processor start-up. Selected pins are either user selected 
                 pins or pins selected in pin properties in components.  Only pins of devices  enabled for auto initialization 
                 are handled within this method.
+   - pin_mux_init_gpio_pins -GPIO method configures registers according to settings  of routing and electrical features. This 
+                method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
+                selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
+                GPIOA, GPIOB, GPIOC, GPIOD, GPIOE peripherals.
+   - pin_mux_deinit_gpio_pins -GPIO method configures registers according to settings  of routing and electrical features. This 
+                method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
+                selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
+                GPIOA, GPIOB, GPIOC, GPIOD, GPIOE peripherals.
    - pin_mux_init_jtag_pins -JTAG method configures registers according to settings  of routing and electrical features. This 
                 method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
                 selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
@@ -163,6 +171,38 @@ Module "pin_mux"   (component PinSettings)
                 method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
                 selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
                 JTAG peripheral.
+   - pin_mux_init_llwu_pins -LLWU method configures registers according to settings  of routing and electrical features. This 
+                method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
+                selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
+                LLWU peripheral.
+   - pin_mux_deinit_llwu_pins -LLWU method configures registers according to settings  of routing and electrical features. This 
+                method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
+                selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
+                LLWU peripheral.
+   - pin_mux_init_lptmr_pins -LPTMR method configures registers according to settings  of routing and electrical features. This 
+                method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
+                selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
+                LPTMR0 peripheral.
+   - pin_mux_deinit_lptmr_pins -LPTMR method configures registers according to settings  of routing and electrical features. 
+                This method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either 
+                user selected pins or pins selected in pin items in components. Call this method code to route desired pins 
+                into LPTMR0 peripheral.
+   - pin_mux_init_osc_pins -OSC method configures registers according to settings  of routing and electrical features. This 
+                method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
+                selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
+                OSC0 peripheral.
+   - pin_mux_deinit_osc_pins -OSC method configures registers according to settings  of routing and electrical features. This 
+                method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
+                selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
+                OSC0 peripheral.
+   - pin_mux_init_uart_pins -UART method configures registers according to settings  of routing and electrical features. This 
+                method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
+                selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
+                UART0, UART1, UART2, UART3, UART4, UART5 peripherals.
+   - pin_mux_deinit_uart_pins -UART method configures registers according to settings  of routing and electrical features. This 
+                method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
+                selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
+                UART0, UART1, UART2, UART3, UART4, UART5 peripherals.
 
 Module "osa1"      (component fsl_os_abstraction)
    - osa1_OSA_PollAllOtherTasks -Calls all task functions one time except for the current task.
@@ -208,6 +248,127 @@ Module "intMan1"   (component fsl_interrupt_manager)
    - intMan1_INT_SYS_DisableIRQ -Disables an interrupt for a given IRQ number.
    - intMan1_INT_SYS_EnableIRQGlobal -Enables system interrupt.
    - intMan1_INT_SYS_DisableIRQGlobal -Disable system interrupt.
+
+Module "uartCom1"  (component fsl_uart)
+   - uartCom1_UART_DRV_Init -Initializes an UART instance for operation.
+   - uartCom1_UART_DRV_Deinit -Shuts down the UART by disabling interrupts and the transmitter/receiver.
+   - uartCom1_UART_DRV_InstallRxCallback -Installs the callback function for the UART receive.
+   - uartCom1_UART_DRV_InstallTxCallback -Installs the callback function for the UART transmit.
+   - uartCom1_UART_DRV_SendDataBlocking -Sends (transmits) data out through the UART module using a blocking method.
+   - uartCom1_UART_DRV_SendData -Sends (transmits) data through the UART module using a non-blocking method.
+   - uartCom1_UART_DRV_GetTransmitStatus -Returns whether the previous UART transmit has finished.
+   - uartCom1_UART_DRV_AbortSendingData -Terminates an asynchronous UART transmission early.
+   - uartCom1_UART_DRV_ReceiveDataBlocking -Gets (receives) data from the UART module using a blocking method.
+   - uartCom1_UART_DRV_ReceiveData -Gets (receives) data from the UART module using a non-blocking method.
+   - uartCom1_UART_DRV_GetReceiveStatus -Returns whether the previous UART receive is complete.
+   - uartCom1_UART_DRV_AbortReceivingData -Terminates an asynchronous UART receive early.
+
+Module "pitTimer1" (component fsl_pit)
+   - pitTimer1_PIT_DRV_Init -Initializes the PIT module.
+   - pitTimer1_PIT_DRV_Deinit -Disables the PIT module and gate control.
+   - pitTimer1_PIT_DRV_InitChannel -Initializes the PIT channel.
+   - pitTimer1_PIT_DRV_StartTimer -Starts the timer counting.
+   - pitTimer1_PIT_DRV_StopTimer -Stops the timer counting.
+   - pitTimer1_PIT_DRV_SetTimerPeriodByUs -Sets the timer period in microseconds.
+   - pitTimer1_PIT_DRV_GetTimerPeriodByUs -Gets the timer period in microseconds for one single channel.
+   - pitTimer1_PIT_DRV_ReadTimerUs -Reads the current timer value in microseconds.
+   - pitTimer1_PIT_DRV_SetTimerPeriodByCount -Sets the timer period in units of count.
+   - pitTimer1_PIT_DRV_GetTimerPeriodByCount -Returns the current timer period in units of count.
+   - pitTimer1_PIT_DRV_ReadTimerCount -Reads the current timer counting value.
+   - pitTimer1_PIT_DRV_SetLifetimeTimerPeriodByUs -Sets the lifetime timer period.
+   - pitTimer1_PIT_DRV_ReadLifetimeTimerUs -Reads the current lifetime value in microseconds.
+   - pitTimer1_PIT_DRV_InitUs -Initializes two PIT channels to serve as a microseconds unit.
+   - pitTimer1_PIT_DRV_GetUs -Gets an absolute time stamp.
+   - pitTimer1_PIT_DRV_DelayUs -Delays the specific microseconds.
+   - pitTimer1_PIT_DRV_ClearIntFlag -Clears the timer interrupt flag.
+   - pitTimer1_PIT_DRV_IsIntPending -Reads the current timer timeout flag.
+
+Module "LED"       (component fsl_gpio)
+   - LED_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
+   - LED_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.
+   - LED_GPIO_DRV_OutputPinInit -Initializes one GPIO output pin used by the board.
+   - LED_GPIO_DRV_GetPinDir -Gets the current direction of the individual GPIO pin.
+   - LED_GPIO_DRV_SetPinDir -Sets the current direction of the individual GPIO pin.
+   - LED_GPIO_DRV_WritePinOutput -Sets the output level of the individual GPIO pin to the logic 1 or 0.
+   - LED_GPIO_DRV_SetPinOutput -Sets the output level of the individual GPIO pin to the logic 1.
+   - LED_GPIO_DRV_ClearPinOutput -Sets the output level of the individual GPIO pin to the logic 0.
+   - LED_GPIO_DRV_TogglePinOutput -Reverses current output logic of the individual GPIO pin.
+   - LED_GPIO_DRV_ReadPinInput -Reads the current input value of the individual GPIO pin.
+   - LED_GPIO_DRV_SetDigitalFilterCmd -Enables or disables the digital filter in a single port.
+   - LED_GPIO_DRV_IsPinIntPending -Reads the individual pin-interrupt status flag.
+   - LED_GPIO_DRV_ClearPinIntFlag -Clears the individual GPIO pin interrupt status flag.
+
+Module "SD_DQ"     (component fsl_gpio)
+   - SD_DQ_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
+   - SD_DQ_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.
+   - SD_DQ_GPIO_DRV_OutputPinInit -Initializes one GPIO output pin used by the board.
+   - SD_DQ_GPIO_DRV_GetPinDir -Gets the current direction of the individual GPIO pin.
+   - SD_DQ_GPIO_DRV_SetPinDir -Sets the current direction of the individual GPIO pin.
+   - SD_DQ_GPIO_DRV_WritePinOutput -Sets the output level of the individual GPIO pin to the logic 1 or 0.
+   - SD_DQ_GPIO_DRV_SetPinOutput -Sets the output level of the individual GPIO pin to the logic 1.
+   - SD_DQ_GPIO_DRV_ClearPinOutput -Sets the output level of the individual GPIO pin to the logic 0.
+   - SD_DQ_GPIO_DRV_TogglePinOutput -Reverses current output logic of the individual GPIO pin.
+   - SD_DQ_GPIO_DRV_ReadPinInput -Reads the current input value of the individual GPIO pin.
+   - SD_DQ_GPIO_DRV_SetDigitalFilterCmd -Enables or disables the digital filter in a single port.
+   - SD_DQ_GPIO_DRV_IsPinIntPending -Reads the individual pin-interrupt status flag.
+   - SD_DQ_GPIO_DRV_ClearPinIntFlag -Clears the individual GPIO pin interrupt status flag.
+
+Module "SD_ADDR"   (component fsl_gpio)
+   - SD_ADDR_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
+   - SD_ADDR_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.
+   - SD_ADDR_GPIO_DRV_OutputPinInit -Initializes one GPIO output pin used by the board.
+   - SD_ADDR_GPIO_DRV_GetPinDir -Gets the current direction of the individual GPIO pin.
+   - SD_ADDR_GPIO_DRV_SetPinDir -Sets the current direction of the individual GPIO pin.
+   - SD_ADDR_GPIO_DRV_WritePinOutput -Sets the output level of the individual GPIO pin to the logic 1 or 0.
+   - SD_ADDR_GPIO_DRV_SetPinOutput -Sets the output level of the individual GPIO pin to the logic 1.
+   - SD_ADDR_GPIO_DRV_ClearPinOutput -Sets the output level of the individual GPIO pin to the logic 0.
+   - SD_ADDR_GPIO_DRV_TogglePinOutput -Reverses current output logic of the individual GPIO pin.
+   - SD_ADDR_GPIO_DRV_ReadPinInput -Reads the current input value of the individual GPIO pin.
+   - SD_ADDR_GPIO_DRV_SetDigitalFilterCmd -Enables or disables the digital filter in a single port.
+   - SD_ADDR_GPIO_DRV_IsPinIntPending -Reads the individual pin-interrupt status flag.
+   - SD_ADDR_GPIO_DRV_ClearPinIntFlag -Clears the individual GPIO pin interrupt status flag.
+
+Module "SD_CTRL"   (component fsl_gpio)
+   - SD_CTRL_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
+   - SD_CTRL_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.
+   - SD_CTRL_GPIO_DRV_OutputPinInit -Initializes one GPIO output pin used by the board.
+   - SD_CTRL_GPIO_DRV_GetPinDir -Gets the current direction of the individual GPIO pin.
+   - SD_CTRL_GPIO_DRV_SetPinDir -Sets the current direction of the individual GPIO pin.
+   - SD_CTRL_GPIO_DRV_WritePinOutput -Sets the output level of the individual GPIO pin to the logic 1 or 0.
+   - SD_CTRL_GPIO_DRV_SetPinOutput -Sets the output level of the individual GPIO pin to the logic 1.
+   - SD_CTRL_GPIO_DRV_ClearPinOutput -Sets the output level of the individual GPIO pin to the logic 0.
+   - SD_CTRL_GPIO_DRV_TogglePinOutput -Reverses current output logic of the individual GPIO pin.
+   - SD_CTRL_GPIO_DRV_ReadPinInput -Reads the current input value of the individual GPIO pin.
+   - SD_CTRL_GPIO_DRV_SetDigitalFilterCmd -Enables or disables the digital filter in a single port.
+   - SD_CTRL_GPIO_DRV_IsPinIntPending -Reads the individual pin-interrupt status flag.
+   - SD_CTRL_GPIO_DRV_ClearPinIntFlag -Clears the individual GPIO pin interrupt status flag.
+
+Module "lpTmr1"    (component fsl_lptmr)
+   - lpTmr1_LPTMR_DRV_Init -Initializes the LPTMR driver.
+   - lpTmr1_LPTMR_DRV_Deinit -De-initializes the LPTMR driver.
+   - lpTmr1_LPTMR_DRV_Start -Starts the LPTMR counter.
+   - lpTmr1_LPTMR_DRV_Stop -Stops the LPTMR counter.
+   - lpTmr1_LPTMR_DRV_SetTimerPeriodUs -Configures the LPTMR timer period in microseconds.
+   - lpTmr1_LPTMR_DRV_GetCurrentTimeUs -Gets the current LPTMR time in microseconds.
+   - lpTmr1_LPTMR_DRV_SetPulsePeriodCount -Sets the pulse period value.
+   - lpTmr1_LPTMR_DRV_GetCurrentPulseCount -Gets the current pulse count.
+   - lpTmr1_LPTMR_DRV_InstallCallback -Installs the user-defined callback in the LPTMR module.
+   - lpTmr1_LPTMR_DRV_IRQHandler -Driver-defined ISR in the LPTMR module.
+
+Module "gpio1"     (component fsl_gpio)
+   - gpio1_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
+   - gpio1_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.
+   - gpio1_GPIO_DRV_OutputPinInit -Initializes one GPIO output pin used by the board.
+   - gpio1_GPIO_DRV_GetPinDir -Gets the current direction of the individual GPIO pin.
+   - gpio1_GPIO_DRV_SetPinDir -Sets the current direction of the individual GPIO pin.
+   - gpio1_GPIO_DRV_WritePinOutput -Sets the output level of the individual GPIO pin to the logic 1 or 0.
+   - gpio1_GPIO_DRV_SetPinOutput -Sets the output level of the individual GPIO pin to the logic 1.
+   - gpio1_GPIO_DRV_ClearPinOutput -Sets the output level of the individual GPIO pin to the logic 0.
+   - gpio1_GPIO_DRV_TogglePinOutput -Reverses current output logic of the individual GPIO pin.
+   - gpio1_GPIO_DRV_ReadPinInput -Reads the current input value of the individual GPIO pin.
+   - gpio1_GPIO_DRV_SetDigitalFilterCmd -Enables or disables the digital filter in a single port.
+   - gpio1_GPIO_DRV_IsPinIntPending -Reads the individual pin-interrupt status flag.
+   - gpio1_GPIO_DRV_ClearPinIntFlag -Clears the individual GPIO pin interrupt status flag.
 
 Module "Cpu"       (component MKV58F1M0LQ22)
    - Cpu_SystemInit -This method configures the oscillator (PLL) that is part of the microcontroller device. SystemInit is 

@@ -33,23 +33,55 @@
 #include "clockMan1.h"
 #include "pin_mux.h"
 #include "osa1.h"
+#include "uartCom1.h"
+#include "pitTimer1.h"
+#include "LED.h"
+#include "SD_DQ.h"
+#include "SD_ADDR.h"
+#include "SD_CTRL.h"
+#include "lpTmr1.h"
+#include "gpio1.h"
 #if CPU_INIT_CONFIG
   #include "Init_Config.h"
 #endif
 /* User includes (#include below this line is not maintained by Processor Expert) */
+#include "sdram.h"
+
+extern int clock_count ;
+volatile uint32_t d_clk ;
+uint32_t clka[128] ;
 
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
 int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
-  /* Write your local variable definition here */
+	/* Write your local variable definition here */
+	uint32_t clk1, clk2 ;
+	uint32_t volatile * p=(uint32_t *)(0x4004000cUL) ;
+	int i ;
 
-  /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
-  PE_low_level_init();
-  /*** End of Processor Expert internal initialization.                    ***/
+	/*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
+	PE_low_level_init();
+	/*** End of Processor Expert internal initialization.                    ***/
+	sdram_init() ;
+	// GPIOD_PDDR=0 ;
 
-  /* Write your code here */
-  /* For example: for(;;) { } */
+	/* Write your code here */
+	lptmr_status_t r=LPTMR_DRV_Start(0) ;
+	/* For example: for(;;) { } */
+	for(;;){
+		//clk1=LPTMR_DRV_GetCurrentPulseCount(0);
+		//clk2=LPTMR_DRV_GetCurrentPulseCount(0);
+		//d_clk=clk2-clk1 ;
+		for(i=0 ; i<100 ; i++){
+			clka[i]=GPIOA_PDIR ;
+		}
+		*p=0UL ;
+		clk1=*p ;
+		*p=0UL ;
+		clk2=*p ;
+		d_clk=clk2-clk1 ;
+	}
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
   /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/

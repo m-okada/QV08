@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 01.00, CPU db: 3.50.001
 **     Repository  : KSDK 1.2.0 KV5XF 1.0.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-08-12, 09:23, # CodeGen: 0
+**     Date/Time   : 2016-08-21, 05:50, # CodeGen: 10
 **     Contents    :
 **         CLOCK_SYS_SetOutDiv1                       - static inline void CLOCK_SYS_SetOutDiv1(uint8_t outdiv1);
 **         CLOCK_SYS_GetOutDiv1                       - static inline uint8_t CLOCK_SYS_GetOutDiv1(void);
@@ -202,6 +202,11 @@
 #include "osa1.h"
 #include "Cpu.h"
 
+/*! @brief OSC instance number */
+#define FSL_OSC0_INSTANCE 0U
+        
+/*! @brief OSC Initialization Configuration Structure */  
+extern osc_user_config_t clockMan1_osc0_Config;
 /*! @brief User configuration structure 0 */
 extern clock_manager_user_config_t clockMan1_InitConfig0;
 

@@ -1,0 +1,53 @@
+/*
+ * sdram_pin.c
+ *
+ *  Created on: 2016/08/21
+ *      Author: Manabu Okada
+ */
+
+#include "sdram_pin.h"
+
+/*
+                       /RAS /CAS /WE
+LOAD MODE REGISTER       L   L   L
+AUTO REFRESH             L   L   H  (Auto refresh or Self refresh)
+PRECHARGE                L   H   L  (Deactivate row)
+ACTIVE                   L   H   H  (Select bank / Active row)
+WRITE                    H   L   L  (Select bank/column , start write)
+READ                     H   L   H  (Select bank/column , start read)
+BURST TERMINATE          H   H   L
+NOP                      H   H   H
+
+*/
+
+/*
+CLK [GPIOD0]
+CLKE [GPIOD1]
+CS_n [GPIOD2]
+BA[2] [GPIOB16,17]
+A[12] [GPIOB0-11]
+DQ[16] [GPIOC0-15]
+command RAS_b,CAS_b,WE_b [GPIOD3-5]
+DQM[2] [GPIOD6-7]
+
+ */
+
+/*
+電源投入
+1. VDD, VDDQ を同時に投入します。このときCKE はローレベルを保持します。
+2. 電源安定を待ちます。
+3. クロックを供給します。また、CKE をハイレベルにします。
+注意 電源投入時は、入力ピンのレベルは VDD+0.3V を超えないようにして下さい。
+
+初期化
+4. 電源およびクロックの安定後、最小200μs 待ちます。
+5. プリチャージオールコマンド(PALL)を発行します。
+6. tRP 経過後、オート・リフレッシュ・コマンドを8 回以上実行します。
+7. モード・レジスタの初期設定のため，モード・レジスタ設定コマンドを実行します。
+備考 初期化シーケンス中は、出力がハイ・インピーダンス状態であることを保証するため，CKE とDQM を
+ハイレベルの状態に保持することを推奨します。
+図3－1 SDRAMの電源投入と
+*/
+
+
+

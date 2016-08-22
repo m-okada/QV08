@@ -1,0 +1,38 @@
+/*
+ * sdram_pin.c
+ *
+ *  Created on: 2016/08/21
+ *      Author: Manabu Okada
+ */
+
+#include "sdram_pin.h"
+
+/*
+                       /RAS /CAS /WE
+LOAD MODE REGISTER       L   L   L
+AUTO REFRESH             L   L   H  (Auto refresh or Self refresh)
+PRECHARGE                L   H   L  (Deactivate row)
+ACTIVE                   L   H   H  (Select bank / Active row)
+WRITE                    H   L   L  (Select bank/column , start write)
+READ                     H   L   H  (Select bank/column , start read)
+BURST TERMINATE          H   H   L
+NOP                      H   H   H
+
+*/
+
+/*
+CLK [GPIOD0]
+CLKE [GPIOD1]
+CS_n [GPIOD2]
+BA[2] A[10]
+A[12]
+DQ[16]
+command RAS_b,CAS_b,WE_b
+DQM[3]
+
+ */
+
+
+
+
+

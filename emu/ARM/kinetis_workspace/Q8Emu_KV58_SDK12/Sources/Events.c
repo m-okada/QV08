@@ -37,6 +37,33 @@ extern "C" {
 
 /* User includes (#include below this line is not maintained by Processor Expert) */
 
+void uartCom1_RxCallback(uint32_t instance, void * uartState)
+{
+  /* Write your code here ... */
+}
+
+void uartCom1_TxCallback(uint32_t instance, void * uartState)
+{
+  /* Write your code here ... */
+}
+
+int clock_count=0 ;
+void PIT0_IRQHandler(void)
+{
+	/* Clear interrupt flag.*/
+	PIT_HAL_ClearIntFlag(g_pitBase[FSL_PITTIMER1], FSL_PITTIMER1_CHANNEL);
+	/* Write your code here ... */
+	GPIO_DRV_TogglePinOutput(GPIOA6) ;
+}
+
+
+
+void lpTmr1_OnTimerCompare(void)
+{
+	/* Write your code here ... */
+	clock_count++ ;
+}
+
 /* END Events */
 
 #ifdef __cplusplus

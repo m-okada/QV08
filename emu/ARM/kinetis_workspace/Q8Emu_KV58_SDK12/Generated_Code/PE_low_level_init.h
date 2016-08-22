@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.2.0 KV5XF 1.0.0
 **     Datasheet   : KV5XP144M220RM Rev.1, 06/2015
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-08-13, 01:10, # CodeGen: 2
+**     Date/Time   : 2016-08-22, 14:09, # CodeGen: 46
 **     Abstract    :
 **
 **     Settings    :
@@ -19,7 +19,7 @@
 **          MemModelDev                                    : MemModel_NoFlexMem
 **          Low power mode settings                        : 
 **            Allowed low power modes                      : 
-**              High speed run mode                        : Not allowed
+**              High speed run mode                        : Allowed
 **              Very low power modes                       : Not allowed
 **              Very low leakage stop mode                 : Not allowed
 **          Common settings                                : 

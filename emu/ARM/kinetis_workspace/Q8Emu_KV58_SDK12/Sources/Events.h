@@ -34,11 +34,31 @@
 #include "clockMan1.h"
 #include "pin_mux.h"
 #include "osa1.h"
+#include "uartCom1.h"
+#include "pitTimer1.h"
+#include "LED.h"
+#include "SD_DQ.h"
+#include "SD_ADDR.h"
+#include "SD_CTRL.h"
+#include "lpTmr1.h"
+#include "gpio1.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif 
 
+
+void uartCom1_RxCallback(uint32_t instance, void * uartState);
+
+void uartCom1_TxCallback(uint32_t instance, void * uartState);
+
+void PIT0_IRQHandler(void);
+
+void PIT1_IRQHandler(void);
+
+void FTM0_IRQHandler(void);
+
+void lpTmr1_OnTimerCompare(void);
 
 /* END Events */
 

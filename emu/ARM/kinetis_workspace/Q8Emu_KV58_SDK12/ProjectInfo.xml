@@ -42,6 +42,7 @@
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\system\src\clock\MKV58F22\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\system\inc\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\osa\inc\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\inc\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\CMSIS\Include\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\devices\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\devices\MKV58F22\include\</Path>
@@ -54,12 +55,19 @@
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\devices\MKV58F22\startup\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\devices\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\src\gpio\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\src\lptmr\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\src\pit\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\src\uart\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\dmamux\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\gpio\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\lptmr\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\mcg\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\osc\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\pit\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\port\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\sim\MKV58F22\</Path>
+      <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\uart\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\xbar\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\osa\src\</Path>
       <Path>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\system\src\clock\MKV58F22\</Path>
@@ -73,19 +81,38 @@
   <FILES>
     <GeneratedCs>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\Cpu.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\LED.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\SD_ADDR.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\SD_CTRL.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\SD_DQ.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\clockMan1.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\gpio1.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\hardware_init.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\lpTmr1.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\osa1.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\pin_mux.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\pitTimer1.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\uartCom1.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\devices\MKV58F22\startup\system_MKV58F22.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\devices\startup.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\src\gpio\fsl_gpio_common.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\src\gpio\fsl_gpio_driver.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\src\lptmr\fsl_lptmr_common.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\src\lptmr\fsl_lptmr_driver.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\src\pit\fsl_pit_common.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\src\pit\fsl_pit_driver.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\src\uart\fsl_uart_common.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\src\uart\fsl_uart_driver.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\dmamux\fsl_dmamux_hal.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\gpio\fsl_gpio_hal.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\lptmr\fsl_lptmr_hal.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\mcg\fsl_mcg_hal.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\mcg\fsl_mcg_hal_modes.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\osc\fsl_osc_hal.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\pit\fsl_pit_hal.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\port\fsl_port_hal.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\sim\MKV58F22\fsl_sim_hal_MKV58F22.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\uart\fsl_uart_hal.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\xbar\fsl_xbar_hal.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\osa\src\fsl_os_abstraction_bm.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\system\src\clock\MKV58F22\fsl_clock_MKV58F22.c</PathName>
@@ -94,16 +121,26 @@
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\system\src\interrupt\fsl_interrupt_manager.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Sources\Events.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Sources\main.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Sources\sdram.c</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Sources\sdram_pin.c</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Static_Code\System\PE_low_level_init.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\Cpu.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\LED.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\PE_low_level_init.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\SDK\platform\devices\MKV58F22\startup\system_MKV58F22.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\SD_ADDR.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\SD_CTRL.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\SD_DQ.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\board.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\clockMan1.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\gpio1.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\lpTmr1.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\osa1.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\pin_mux.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\pitTimer1.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Generated_Code\uartCom1.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\CMSIS\Include\arm_common_tables.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\CMSIS\Include\arm_const_structs.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\CMSIS\Include\arm_math.h</PathName>
@@ -117,13 +154,20 @@
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\devices\MKV58F22\include\fsl_bitaccess.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\devices\fsl_device_registers.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\devices\startup.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\inc\fsl_gpio_driver.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\inc\fsl_lptmr_driver.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\inc\fsl_pit_driver.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\drivers\inc\fsl_uart_driver.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\inc\fsl_dmamux_hal.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\inc\fsl_gpio_hal.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\inc\fsl_lptmr_hal.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\inc\fsl_mcg_hal.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\inc\fsl_mcg_hal_modes.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\inc\fsl_osc_hal.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\inc\fsl_pit_hal.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\inc\fsl_port_hal.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\inc\fsl_sim_hal.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\inc\fsl_uart_hal.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\inc\fsl_xbar_hal.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\inc\fsl_xbar_signals.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\hal\src\sim\MKV58F22\fsl_sim_hal_MKV58F22.h</PathName>
@@ -133,6 +177,8 @@
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\system\inc\fsl_interrupt_manager.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\system\src\clock\MKV58F22\fsl_clock_MKV58F22.h</PathName>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Sources\Events.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Sources\sdram.h</PathName>
+      <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\Sources\sdram_pin.h</PathName>
     </GeneratedHs>
     <GeneratedASMs>
       <PathName>K:\home\projects\QV08\emu\ARM\kinetis_workspace\Q8Emu_KV58_SDK12\SDK\platform\devices\MKV58F22\startup\gcc\startup_MKV58F22.S</PathName>

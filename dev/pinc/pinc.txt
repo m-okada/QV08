@@ -1,4 +1,9 @@
+\home\projects\pinc_langへ移動
 PINC is not C Langage.
+
+pinc-lang.org
+
+
 
 cc500から改造の範囲で、C言語のサブセット＋独自拡張。
 QV08プロセッサシステムで実時間コンパイルを目指す。
@@ -25,12 +30,57 @@ bar() ;	//	OK
 for(i=1..90%3){
 }
 
+1..10@{
+}
 
+type ident;	//	型identの宣言
+int ident.x ;	//	インスタンス変数
+int ident::ClassVar ;	//	クラス変数
 
+int ident.foo(int x, int y){	//	ident型のfoo関数の定義
+}
+
+ident::+(){}	//	オペレータ+の定義
+
+ident i ;
+i.foo():int ;　intを返すfoo()の呼び出し。
+
+object message
+
+taraget.[message|object].[message|object] ... ;
+
+target.foo(arg);
+
+foo(arg)の返すオブジェクトをtargetに送る。
+
+MessageはMessageObject
 
 continue-breakスタック
 offset=35
 
 ptr[2].offset
 
+
+intへ代入する場合、intを返す関数、stringに代入する場合、stringを返す関数が呼ばれる。
+引数の型による呼び出し。
+
+
+こんなんしといてちゃんとコンパイルしたら関数呼び出してない所は余計なcallを吐かない仕様にしたい。
+型は静的。
+コンパイラは１パス。
+
+
+オーバーロードされた関数の引数に積む場合、決められない場合エラー。
+
+
+
+NULL : 0(8)
+false : 0(8)
+true : (1)
+
+char,short,int = signedd
+uchar,ushort,uint,BYTE,WORD,DWORD=unsigned
+
+BOOL
+ptr
 
