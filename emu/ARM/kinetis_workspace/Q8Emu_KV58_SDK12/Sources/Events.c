@@ -48,12 +48,19 @@ void uartCom1_TxCallback(uint32_t instance, void * uartState)
 }
 
 int clock_count=0 ;
+int reflesh_req=0 ;
+static int reflesh_tick=0 ;
 void PIT0_IRQHandler(void)
 {
 	/* Clear interrupt flag.*/
 	PIT_HAL_ClearIntFlag(g_pitBase[FSL_PITTIMER1], FSL_PITTIMER1_CHANNEL);
 	/* Write your code here ... */
-	GPIO_DRV_TogglePinOutput(GPIOA6) ;
+	reflesh_req=1 ;	//	reflesh request flag.
+	reflesh_tick+=6 ;
+	if(reflesh_tick > 500){
+		reflesh_tick=0 ;
+		GPIO_DRV_TogglePinOutput(GPIOA6) ;
+	}
 }
 
 
@@ -63,6 +70,13 @@ void lpTmr1_OnTimerCompare(void)
 	/* Write your code here ... */
 	clock_count++ ;
 }
+
+void CrossBar1_Callback(void * param)
+{
+    /* Write you code here... */
+}
+
+
 
 /* END Events */
 

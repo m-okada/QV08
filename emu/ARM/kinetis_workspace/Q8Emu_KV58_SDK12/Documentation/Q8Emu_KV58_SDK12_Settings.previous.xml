@@ -329,6 +329,22 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
+  <Bean name="lpTmr1" type="fsl_lptmr">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="lpTmr1" />
+      <Device v="LPTMR0" />
+      <Counter_register v="LPTMR0_CNR" />
+      <Compare_register v="LPTMR0_CMR" />
+      <Component_version v="1.2.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
   <Bean name="LED" type="fsl_gpio">
     <Enabled v="Y" />
     <Properties>
@@ -355,10 +371,10 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="SD_ADDR" type="fsl_gpio">
+  <Bean name="SD_ADDR_CTRL" type="fsl_gpio">
     <Enabled v="Y" />
     <Properties>
-      <Component_name v="SD_ADDR" />
+      <Component_name v="SD_ADDR_CTRL" />
       <Component_version v="1.2.0" />
     </Properties>
     <Methods>
@@ -368,10 +384,10 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="SD_CTRL" type="fsl_gpio">
+  <Bean name="SD_CLK" type="fsl_gpio">
     <Enabled v="Y" />
     <Properties>
-      <Component_name v="SD_CTRL" />
+      <Component_name v="SD_CLK" />
       <Component_version v="1.2.0" />
     </Properties>
     <Methods>
@@ -381,13 +397,24 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="lpTmr1" type="fsl_lptmr">
+  <Bean name="gpio1" type="fsl_gpio">
     <Enabled v="Y" />
     <Properties>
-      <Component_name v="lpTmr1" />
-      <Device v="LPTMR0" />
-      <Counter_register v="LPTMR0_CNR" />
-      <Compare_register v="LPTMR0_CMR" />
+      <Component_name v="gpio1" />
+      <Component_version v="1.2.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="CrossBar1" type="fsl_xbar">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="CrossBar1" />
+      <Device v="XBAR" />
       <Component_version v="1.2.0" />
     </Properties>
     <Methods>

@@ -38,10 +38,11 @@
 #include "pitTimer1.h"
 #include "LED.h"
 #include "SD_DQ.h"
-#include "SD_ADDR.h"
-#include "SD_CTRL.h"
+#include "SD_ADDR_CTRL.h"
+#include "SD_CLK.h"
 #include "lpTmr1.h"
-#include "gpio1.h"
+#include "CLK12M_IN.h"
+#include "CrossBar1.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -59,6 +60,8 @@ void PIT1_IRQHandler(void);
 void FTM0_IRQHandler(void);
 
 void lpTmr1_OnTimerCompare(void);
+
+void CrossBar1_Callback(void * param);
 
 /* END Events */
 

@@ -1,0 +1,14 @@
+/*
+ * sdram_pin.h
+ *
+ *  Created on: 2016/08/21
+ *      Author: nic
+ */
+
+#ifndef SOURCES_SDRAM_PIN_H_
+#define SOURCES_SDRAM_PIN_H_
+
+void sdramport_init(void) ;
+void sdramport_setmode(int bank, int ctrl, int addr) ;
+
+#endif /* SOURCES_SDRAM_PIN_H_ */

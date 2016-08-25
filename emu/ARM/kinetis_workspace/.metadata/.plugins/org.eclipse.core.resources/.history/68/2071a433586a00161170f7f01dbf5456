@@ -1,0 +1,19 @@
+/*
+ * sdram_port.h
+ *
+ *  Created on: 2016/08/25
+ *      Author: Manabu Okada
+ */
+
+#ifndef SOURCES_SDRAM_PORT_H_
+#define SOURCES_SDRAM_PORT_H_
+
+
+void sdramport_init(void) ;
+void sdrampot_cd_assert(void) ;
+void sdrampot_cd_negate(void) ;
+
+void sdramport_setmode(int bank, int ctrl, int addr) ;
+void sdramport_clk(void) ;
+
+#endif /* SOURCES_SDRAM_PORT_H_ */

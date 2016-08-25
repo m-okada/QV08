@@ -5,8 +5,8 @@
  *      Author: Manabu Okada
  */
 
-
-#include "sdram_pin.h"
+#include "cpu.h"
+#include "sdram_port.h"
 #include "sdram.h"
 
 /*
@@ -72,19 +72,62 @@ No コマンド                  略号  CKE      /CS /RAS /CAS /WE DQM Address
 (AP) (オート・プリチャージ付き)
 
 
-
+Row Address: RA0 ~ RA11, Column Address: CA0 ~ CA8
 */
+static void sdram_set_cmd(int cmd, int op) ;
 
 void sdram_init(void){
 	;
+
+	// A9:1single write
+	//   A6-A4:010 CL2
+	//     A3:0 Sequential
+	//       A2-A0:011 Burst Length 8
+	sdram_set_cmd(SDR_MRS, 0) ;
+	sdramport_setmode(0x00000223UL) ;
 }
 
-int sdram_read(int addr){
+static void sdram_set_cmd(int cmd, int option){
+	switch(cmd){
+	case SDR_MRS:
+		break ;
+	case SDR_REF:
+		break ;
+	case SDR_SELF:
+		break ;
+	case SDR_END_SELF:
+		break ;
+	case SDR_PRE:
+		break ;
+	case SDR_PALL:
+		break ;
+	case SDR_ACT:
+		break ;
+	case SDR_WRIT:
+		break ;
+	case SDR_WRITA:
+		break ;
+	case SDR_READ:
+		break ;
+	case SDR_READA:
+		break ;
+	case SDR_BST:
+		break ;
+	case SDR_NOP:
+		break ;
+	case SDR_DSEL:
+		break ;
+	default:
+		break ;
+	}
+}
+
+int sdram_read_byte(int addr){
 	;
 
 	return 0 ;
 }
 
-void sdram_reflesh(int start_clmn){
+void sdram_refresh(int start_clmn){
 	;
 }

@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.50.001
 **     Repository  : KSDK 1.2.0 KV5XF 1.0.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-08-22, 23:37, # CodeGen: 56
+**     Date/Time   : 2016-08-25, 02:54, # CodeGen: 65
 **     Abstract    :
 **
 **     Settings    :
@@ -2285,6 +2285,10 @@ void init_gpio_pins(uint32_t instance)
       PORT_HAL_SetPullCmd(PORTA,24UL,false);
       PORT_HAL_SetMuxMode(PORTA,24UL,kPortMuxAsGpio);
       PORT_HAL_SetPullMode(PORTA,24UL,kPortPullUp);
+      /* Affects PORTA_PCR28 register */
+      PORT_HAL_SetSlewRateMode(PORTA,28UL,kPortFastSlewRate);
+      PORT_HAL_SetOpenDrainCmd(PORTA,28UL,false);
+      PORT_HAL_SetMuxMode(PORTA,28UL,kPortMuxAsGpio);
       break;
     case GPIOB_IDX:                     /* GPIOB_IDX */
       /* Affects PORTB_PCR0 register */
@@ -2337,6 +2341,38 @@ void init_gpio_pins(uint32_t instance)
       PORT_HAL_SetSlewRateMode(PORTB,11UL,kPortFastSlewRate);
       PORT_HAL_SetOpenDrainCmd(PORTB,11UL,false);
       PORT_HAL_SetMuxMode(PORTB,11UL,kPortMuxAsGpio);
+      /* Affects PORTB_PCR16 register */
+      PORT_HAL_SetMuxMode(PORTB,16UL,kPortMuxAsGpio);
+      PORT_HAL_SetSlewRateMode(PORTB,16UL,kPortSlowSlewRate);
+      PORT_HAL_SetOpenDrainCmd(PORTB,16UL,true);
+      /* Affects PORTB_PCR17 register */
+      PORT_HAL_SetMuxMode(PORTB,17UL,kPortMuxAsGpio);
+      PORT_HAL_SetSlewRateMode(PORTB,17UL,kPortSlowSlewRate);
+      PORT_HAL_SetOpenDrainCmd(PORTB,17UL,true);
+      /* Affects PORTB_PCR18 register */
+      PORT_HAL_SetMuxMode(PORTB,18UL,kPortMuxAsGpio);
+      PORT_HAL_SetSlewRateMode(PORTB,18UL,kPortSlowSlewRate);
+      PORT_HAL_SetOpenDrainCmd(PORTB,18UL,true);
+      /* Affects PORTB_PCR19 register */
+      PORT_HAL_SetMuxMode(PORTB,19UL,kPortMuxAsGpio);
+      PORT_HAL_SetSlewRateMode(PORTB,19UL,kPortSlowSlewRate);
+      PORT_HAL_SetOpenDrainCmd(PORTB,19UL,true);
+      /* Affects PORTB_PCR20 register */
+      PORT_HAL_SetMuxMode(PORTB,20UL,kPortMuxAsGpio);
+      PORT_HAL_SetSlewRateMode(PORTB,20UL,kPortSlowSlewRate);
+      PORT_HAL_SetOpenDrainCmd(PORTB,20UL,true);
+      /* Affects PORTB_PCR21 register */
+      PORT_HAL_SetMuxMode(PORTB,21UL,kPortMuxAsGpio);
+      PORT_HAL_SetSlewRateMode(PORTB,21UL,kPortSlowSlewRate);
+      PORT_HAL_SetOpenDrainCmd(PORTB,21UL,true);
+      /* Affects PORTB_PCR22 register */
+      PORT_HAL_SetMuxMode(PORTB,22UL,kPortMuxAsGpio);
+      PORT_HAL_SetSlewRateMode(PORTB,22UL,kPortSlowSlewRate);
+      PORT_HAL_SetOpenDrainCmd(PORTB,22UL,true);
+      /* Affects PORTB_PCR23 register */
+      PORT_HAL_SetMuxMode(PORTB,23UL,kPortMuxAsGpio);
+      PORT_HAL_SetSlewRateMode(PORTB,23UL,kPortSlowSlewRate);
+      PORT_HAL_SetOpenDrainCmd(PORTB,23UL,true);
       break;
     case GPIOC_IDX:                     /* GPIOC_IDX */
       /* Affects PORTC_PCR0 register */
@@ -2409,6 +2445,10 @@ void init_gpio_pins(uint32_t instance)
       PORT_HAL_SetSlewRateMode(PORTD,0UL,kPortFastSlewRate);
       PORT_HAL_SetOpenDrainCmd(PORTD,0UL,false);
       PORT_HAL_SetMuxMode(PORTD,0UL,kPortMuxAsGpio);
+      /* Affects PORTD_PCR1 register */
+      PORT_HAL_SetSlewRateMode(PORTD,1UL,kPortFastSlewRate);
+      PORT_HAL_SetOpenDrainCmd(PORTD,1UL,false);
+      PORT_HAL_SetMuxMode(PORTD,1UL,kPortMuxAsGpio);
       break;
     default:
       break;
@@ -2426,6 +2466,7 @@ void deinit_gpio_pins(uint32_t instance)
     case GPIOA_IDX:                     /* GPIOA_IDX */
       PORT_HAL_SetMuxMode(PORTA,6UL,kPortPinDisabled);
       PORT_HAL_SetMuxMode(PORTA,24UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTA,28UL,kPortPinDisabled);
       break;
     case GPIOB_IDX:                     /* GPIOB_IDX */
       PORT_HAL_SetMuxMode(PORTB,0UL,kPortPinDisabled);
@@ -2440,6 +2481,14 @@ void deinit_gpio_pins(uint32_t instance)
       PORT_HAL_SetMuxMode(PORTB,9UL,kPortPinDisabled);
       PORT_HAL_SetMuxMode(PORTB,10UL,kPortPinDisabled);
       PORT_HAL_SetMuxMode(PORTB,11UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTB,16UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTB,17UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTB,18UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTB,19UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTB,20UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTB,21UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTB,22UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTB,23UL,kPortPinDisabled);
       break;
     case GPIOC_IDX:                     /* GPIOC_IDX */
       PORT_HAL_SetMuxMode(PORTC,0UL,kPortPinDisabled);
@@ -2461,6 +2510,7 @@ void deinit_gpio_pins(uint32_t instance)
       break;
     case GPIOD_IDX:                     /* GPIOD_IDX */
       PORT_HAL_SetMuxMode(PORTD,0UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTD,1UL,kPortPinDisabled);
       break;
     default:
       break;

@@ -1,0 +1,23 @@
+/*
+ * sdram_pin.h
+ *
+ *  Created on: 2016/08/21
+ *      Author: nic
+ */
+
+#ifndef SOURCES_SDRAM_PIN_H_
+#define SOURCES_SDRAM_PIN_H_
+
+enum _SD_Command{
+	MRS=0,	//	Set mode register.
+	REF,	//	Auto refresh.
+	SELF,
+	END_SELF,
+	PRE,	//	Precharge
+	PALL,	//	Precharge ALL.
+	ACT,	//	Bank Activation.
+} ;
+
+
+
+#endif /* SOURCES_SDRAM_PIN_H_ */

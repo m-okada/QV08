@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 01.00, CPU db: 3.50.001
 **     Repository  : KSDK 1.2.0 KV5XF 1.0.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-08-21, 15:36, # CodeGen: 21
+**     Date/Time   : 2016-08-25, 17:32, # CodeGen: 68
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -55,7 +55,7 @@
 #include <stdbool.h>
 const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
   {
-    .pinName = GPIOC0,
+    .pinName = DQ00,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -63,7 +63,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC1,
+    .pinName = DQ01,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -71,7 +71,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC2,
+    .pinName = DQ02,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -79,7 +79,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC3,
+    .pinName = DQ03,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -87,7 +87,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC4,
+    .pinName = DQ04,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -95,7 +95,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC5,
+    .pinName = DQ05,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -103,7 +103,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC6,
+    .pinName = DQ06,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -111,7 +111,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC7,
+    .pinName = DQ07,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -119,7 +119,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC8,
+    .pinName = DQ08,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -127,7 +127,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC9,
+    .pinName = DQ09,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -135,7 +135,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC10,
+    .pinName = DQ10,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -143,7 +143,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC11,
+    .pinName = DQ11,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -151,7 +151,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC12,
+    .pinName = DQ12,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -159,7 +159,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC13,
+    .pinName = DQ13,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -167,7 +167,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC14,
+    .pinName = DQ14,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,
@@ -175,7 +175,7 @@ const gpio_input_pin_user_config_t SD_DQ_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
-    .pinName = GPIOC15,
+    .pinName = DQ15,
     .config.isPullEnable = false,
     .config.pullSelect = kPortPullDown,
     .config.isPassiveFilterEnabled = false,

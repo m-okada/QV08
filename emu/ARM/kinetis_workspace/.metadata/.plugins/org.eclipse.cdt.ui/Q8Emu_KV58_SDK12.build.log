@@ -1,11 +1,11 @@
-23:58:56 **** Incremental Build of configuration Debug for project Q8Emu_KV58_SDK12 ****
+19:35:05 **** Incremental Build of configuration Debug for project Q8Emu_KV58_SDK12 ****
 make all 
 Invoking: Cross ARM GNU Print Size
 arm-none-eabi-size --format=berkeley "Q8Emu_KV58_SDK12.elf"
    text	   data	    bss	    dec	    hex	filename
-  24724	    128	   6000	  30852	   7884	Q8Emu_KV58_SDK12.elf
+  25400	    128	   6008	  31536	   7b30	Q8Emu_KV58_SDK12.elf
 Finished building: Q8Emu_KV58_SDK12.siz
  
 
-23:58:56 Build Finished (took 267ms)
+19:35:05 Build Finished (took 267ms)
 

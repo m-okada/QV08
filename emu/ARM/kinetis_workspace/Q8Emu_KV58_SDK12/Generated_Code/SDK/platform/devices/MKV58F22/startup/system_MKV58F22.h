@@ -130,8 +130,8 @@ extern "C" {
   #define SYSTEM_OSC0_OSC_DIV_VALUE     0x00U              /* OSC0_OSC_DIV */
   /* SMC_PMCTRL: RUNM=3 */
   #define SYSTEM_SMC_PMCTRL_VALUE       0x60               /* SMC_PMCTRL */
-  /* SIM_SOPT1: OSC32KSEL=0 */
-  #define SYSTEM_SIM_SOPT1_VALUE        0x00UL             /* SIM_SOPT1 */
+  /* SIM_SOPT1: OSC32KSEL=3 */
+  #define SYSTEM_SIM_SOPT1_VALUE        0x000C0000UL       /* SIM_SOPT1 */
   /* SIM_CLKDIV1: OUTDIV1=0,OUTDIV2=1,OUTDIV3=7,OUTDIV4=7 */
   #define SYSTEM_SIM_CLKDIV1_VALUE      0x01770000UL       /* SIM_CLKDIV1 */
 #endif

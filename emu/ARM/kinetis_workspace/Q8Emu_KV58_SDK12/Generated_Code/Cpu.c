@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.2.0 KV5XF 1.0.0
 **     Datasheet   : KV5XP144M220RM Rev.1, 06/2015
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-08-22, 23:37, # CodeGen: 56
+**     Date/Time   : 2016-08-25, 19:32, # CodeGen: 69
 **     Abstract    :
 **
 **     Settings    :
@@ -114,9 +114,15 @@ void Components_Init(void)
   /*! uartCom1 Auto initialization end */
   /*! pitTimer1 Auto initialization start */
   PIT_DRV_Init(FSL_PITTIMER1,true);
-  PIT_DRV_InitChannel(FSL_PITTIMER1,FSL_PITTIMER1_CHANNEL,&pitTimer1_InitConfig0);
+  PIT_DRV_InitChannel(FSL_PITTIMER1,FSL_PITTIMER1_CHANNEL,&pitTimer1_InitConfig1);
   PIT_DRV_StartTimer(FSL_PITTIMER1,FSL_PITTIMER1_CHANNEL);
   /*! pitTimer1 Auto initialization end */
+  /*! lpTmr1 Auto initialization start */
+  OSA_InstallIntHandler(LPTMR0_IRQn, LPTMR0_IRQHandler);
+  LPTMR_DRV_Init(FSL_LPTMR1,&lpTmr1_State,&lpTmr1_lptmrCfg0);
+  LPTMR_DRV_InstallCallback(FSL_LPTMR1,lpTmr1_OnTimerCompare);
+  /*! lpTmr1 Auto initialization end */
+
   /*! LED Auto initialization start */
   GPIO_DRV_Init(NULL,LED_OutConfig0);
   /*! LED Auto initialization end */
@@ -125,23 +131,17 @@ void Components_Init(void)
   GPIO_DRV_Init(SD_DQ_InpConfig0,NULL);
   /*! SD_DQ Auto initialization end */
   
-  /*! SD_ADDR Auto initialization start */
-  GPIO_DRV_Init(NULL,SD_ADDR_OutConfig0);
-  /*! SD_ADDR Auto initialization end */
+  /*! SD_ADDR_CTRL Auto initialization start */
+  GPIO_DRV_Init(NULL,SD_ADDR_CTRL_OutConfig0);
+  /*! SD_ADDR_CTRL Auto initialization end */
   
-  /*! SD_CTRL Auto initialization start */
-  GPIO_DRV_Init(NULL,SD_CTRL_OutConfig0);
-  /*! SD_CTRL Auto initialization end */
+  /*! SD_CLK Auto initialization start */
+  GPIO_DRV_Init(NULL,SD_CLK_OutConfig0);
+  /*! SD_CLK Auto initialization end */
   
-  /*! lpTmr1 Auto initialization start */
-  OSA_InstallIntHandler(LPTMR0_IRQn, LPTMR0_IRQHandler);
-  LPTMR_DRV_Init(FSL_LPTMR1,&lpTmr1_State,&lpTmr1_lptmrCfg0);
-  LPTMR_DRV_InstallCallback(FSL_LPTMR1,lpTmr1_OnTimerCompare);
-  /*! lpTmr1 Auto initialization end */
-
-  /*! gpio1 Auto initialization start */
-  GPIO_DRV_Init(gpio1_InpConfig0,NULL);
-  /*! gpio1 Auto initialization end */
+  /*! CLK12M_IN Auto initialization start */
+  GPIO_DRV_Init(CLK12M_IN_InpConfig0,CLK12M_IN_OutConfig0);
+  /*! CLK12M_IN Auto initialization end */
   
 }
 #endif /* CPU_COMPONENTS_INIT */

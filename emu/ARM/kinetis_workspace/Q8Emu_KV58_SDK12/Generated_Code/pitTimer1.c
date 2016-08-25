@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 01.00, CPU db: 3.50.001
 **     Repository  : KSDK 1.2.0 KV5XF 1.0.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-08-21, 23:35, # CodeGen: 29
+**     Date/Time   : 2016-08-23, 12:03, # CodeGen: 64
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -55,11 +55,11 @@
 #include "pitTimer1.h"
 
 const pit_user_config_t pitTimer1_InitConfig0 = {
-  .isInterruptEnabled = true,
-  .periodUs = 500000U,
 };
 
 const pit_user_config_t pitTimer1_InitConfig1 = {
+  .isInterruptEnabled = true,
+  .periodUs = 6000U,
 };
 
 

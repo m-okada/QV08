@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 01.00, CPU db: 3.50.001
 **     Repository  : KSDK 1.2.0 KV5XF 1.0.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-08-22, 14:09, # CodeGen: 46
+**     Date/Time   : 2016-08-25, 10:28, # CodeGen: 67
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -106,7 +106,7 @@ clock_manager_user_config_t clockMan1_InitConfig0 = {
     /*! @brief Configuration of SIM module */  
     .simConfig = 
     {
-        .er32kSrc = kClockEr32kSrcOsc0, /*!< ERCLK32K source selection */
+        .er32kSrc = kClockEr32kSrcLpo, /*!< ERCLK32K source selection */
         .outdiv1 = 0U, /*!< OUTDIV1 setting */
         .outdiv2 = 1U, /*!< OUTDIV2 setting */
         .outdiv3 = 7U, /*!< OUTDIV3 setting */

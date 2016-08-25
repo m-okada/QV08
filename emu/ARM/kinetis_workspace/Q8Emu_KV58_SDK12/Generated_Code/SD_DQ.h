@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 01.00, CPU db: 3.50.001
 **     Repository  : KSDK 1.2.0 KV5XF 1.0.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-08-21, 15:36, # CodeGen: 21
+**     Date/Time   : 2016-08-25, 17:32, # CodeGen: 68
 **     Contents    :
 **         GPIO_DRV_Init                - void GPIO_DRV_Init(const gpio_input_pin_user_config_t * inputPins,const...
 **         GPIO_DRV_InputPinInit        - void GPIO_DRV_InputPinInit(const gpio_input_pin_user_config_t * inputPin);
@@ -79,22 +79,22 @@ extern const gpio_input_pin_user_config_t SD_DQ_InpConfig0[];
 
 /*! @brief Pin names */
 enum _SD_DQ_pinNames{
-  GPIOC0 = GPIO_MAKE_PIN(GPIOC_IDX, 0U),
-  GPIOC1 = GPIO_MAKE_PIN(GPIOC_IDX, 1U),
-  GPIOC2 = GPIO_MAKE_PIN(GPIOC_IDX, 2U),
-  GPIOC3 = GPIO_MAKE_PIN(GPIOC_IDX, 3U),
-  GPIOC4 = GPIO_MAKE_PIN(GPIOC_IDX, 4U),
-  GPIOC5 = GPIO_MAKE_PIN(GPIOC_IDX, 5U),
-  GPIOC6 = GPIO_MAKE_PIN(GPIOC_IDX, 6U),
-  GPIOC7 = GPIO_MAKE_PIN(GPIOC_IDX, 7U),
-  GPIOC8 = GPIO_MAKE_PIN(GPIOC_IDX, 8U),
-  GPIOC9 = GPIO_MAKE_PIN(GPIOC_IDX, 9U),
-  GPIOC10 = GPIO_MAKE_PIN(GPIOC_IDX, 10U),
-  GPIOC11 = GPIO_MAKE_PIN(GPIOC_IDX, 11U),
-  GPIOC12 = GPIO_MAKE_PIN(GPIOC_IDX, 12U),
-  GPIOC13 = GPIO_MAKE_PIN(GPIOC_IDX, 13U),
-  GPIOC14 = GPIO_MAKE_PIN(GPIOC_IDX, 14U),
-  GPIOC15 = GPIO_MAKE_PIN(GPIOC_IDX, 15U),
+  DQ00 = GPIO_MAKE_PIN(GPIOC_IDX, 0U),
+  DQ01 = GPIO_MAKE_PIN(GPIOC_IDX, 1U),
+  DQ02 = GPIO_MAKE_PIN(GPIOC_IDX, 2U),
+  DQ03 = GPIO_MAKE_PIN(GPIOC_IDX, 3U),
+  DQ04 = GPIO_MAKE_PIN(GPIOC_IDX, 4U),
+  DQ05 = GPIO_MAKE_PIN(GPIOC_IDX, 5U),
+  DQ06 = GPIO_MAKE_PIN(GPIOC_IDX, 6U),
+  DQ07 = GPIO_MAKE_PIN(GPIOC_IDX, 7U),
+  DQ08 = GPIO_MAKE_PIN(GPIOC_IDX, 8U),
+  DQ09 = GPIO_MAKE_PIN(GPIOC_IDX, 9U),
+  DQ10 = GPIO_MAKE_PIN(GPIOC_IDX, 10U),
+  DQ11 = GPIO_MAKE_PIN(GPIOC_IDX, 11U),
+  DQ12 = GPIO_MAKE_PIN(GPIOC_IDX, 12U),
+  DQ13 = GPIO_MAKE_PIN(GPIOC_IDX, 13U),
+  DQ14 = GPIO_MAKE_PIN(GPIOC_IDX, 14U),
+  DQ15 = GPIO_MAKE_PIN(GPIOC_IDX, 15U),
 };
 
   

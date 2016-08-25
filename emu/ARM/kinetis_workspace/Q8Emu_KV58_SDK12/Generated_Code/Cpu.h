@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.2.0 KV5XF 1.0.0
 **     Datasheet   : KV5XP144M220RM Rev.1, 06/2015
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-08-22, 11:06, # CodeGen: 37
+**     Date/Time   : 2016-08-23, 11:57, # CodeGen: 62
 **     Abstract    :
 **
 **     Settings    :
@@ -84,9 +84,10 @@
 #include "fsl_uart_driver.h"
 #include "fsl_pit_hal.h"
 #include "fsl_pit_driver.h"
+#include "fsl_lptmr_driver.h"
 #include "fsl_gpio_hal.h"
 #include "fsl_gpio_driver.h"
-#include "fsl_lptmr_driver.h"
+#include "fsl_xbar_driver.h"
 #include <assert.h>
 
 #ifdef __cplusplus

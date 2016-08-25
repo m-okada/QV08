@@ -1,0 +1,34 @@
+/*
+ * sdram_pin.h
+ *
+ *  Created on: 2016/08/21
+ *      Author: nic
+ */
+
+#ifndef SOURCES_SDRAM_PIN_H_
+#define SOURCES_SDRAM_PIN_H_
+
+typedef enum _SD_Command{
+	SDC_MRS=0,	//	Set mode register.
+	SDC_REF,	//	Auto refresh.
+	SDC_SELF,
+	SDC_END_SELF,
+	SDC_PRE,	//	Precharge
+	SDC_PALL,	//	Precharge ALL.
+	SDC_ACT,	//	Bank Activation.
+	SDC_WRIT,
+	SDC_WRITA,
+	SDC_READ,
+	SDC_READA,
+	SDC_BST,	//	Burst stop.
+	SDC_NOP,
+	SDC_DSEL
+} SD_Command ;
+
+void sd_init(void) ;
+void sd_set_cmd(int cmd, int op) ;
+
+int sd_read_single(int addr) ;
+void sd_write_single(int addr, int value) ;
+
+#endif /* SOURCES_SDRAM_PIN_H_ */

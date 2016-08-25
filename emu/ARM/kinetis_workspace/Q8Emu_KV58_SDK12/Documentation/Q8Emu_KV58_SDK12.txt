@@ -283,6 +283,18 @@ Module "pitTimer1" (component fsl_pit)
    - pitTimer1_PIT_DRV_ClearIntFlag -Clears the timer interrupt flag.
    - pitTimer1_PIT_DRV_IsIntPending -Reads the current timer timeout flag.
 
+Module "lpTmr1"    (component fsl_lptmr)
+   - lpTmr1_LPTMR_DRV_Init -Initializes the LPTMR driver.
+   - lpTmr1_LPTMR_DRV_Deinit -De-initializes the LPTMR driver.
+   - lpTmr1_LPTMR_DRV_Start -Starts the LPTMR counter.
+   - lpTmr1_LPTMR_DRV_Stop -Stops the LPTMR counter.
+   - lpTmr1_LPTMR_DRV_SetTimerPeriodUs -Configures the LPTMR timer period in microseconds.
+   - lpTmr1_LPTMR_DRV_GetCurrentTimeUs -Gets the current LPTMR time in microseconds.
+   - lpTmr1_LPTMR_DRV_SetPulsePeriodCount -Sets the pulse period value.
+   - lpTmr1_LPTMR_DRV_GetCurrentPulseCount -Gets the current pulse count.
+   - lpTmr1_LPTMR_DRV_InstallCallback -Installs the user-defined callback in the LPTMR module.
+   - lpTmr1_LPTMR_DRV_IRQHandler -Driver-defined ISR in the LPTMR module.
+
 Module "LED"       (component fsl_gpio)
    - LED_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
    - LED_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.
@@ -313,62 +325,62 @@ Module "SD_DQ"     (component fsl_gpio)
    - SD_DQ_GPIO_DRV_IsPinIntPending -Reads the individual pin-interrupt status flag.
    - SD_DQ_GPIO_DRV_ClearPinIntFlag -Clears the individual GPIO pin interrupt status flag.
 
-Module "SD_ADDR"   (component fsl_gpio)
-   - SD_ADDR_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
-   - SD_ADDR_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.
-   - SD_ADDR_GPIO_DRV_OutputPinInit -Initializes one GPIO output pin used by the board.
-   - SD_ADDR_GPIO_DRV_GetPinDir -Gets the current direction of the individual GPIO pin.
-   - SD_ADDR_GPIO_DRV_SetPinDir -Sets the current direction of the individual GPIO pin.
-   - SD_ADDR_GPIO_DRV_WritePinOutput -Sets the output level of the individual GPIO pin to the logic 1 or 0.
-   - SD_ADDR_GPIO_DRV_SetPinOutput -Sets the output level of the individual GPIO pin to the logic 1.
-   - SD_ADDR_GPIO_DRV_ClearPinOutput -Sets the output level of the individual GPIO pin to the logic 0.
-   - SD_ADDR_GPIO_DRV_TogglePinOutput -Reverses current output logic of the individual GPIO pin.
-   - SD_ADDR_GPIO_DRV_ReadPinInput -Reads the current input value of the individual GPIO pin.
-   - SD_ADDR_GPIO_DRV_SetDigitalFilterCmd -Enables or disables the digital filter in a single port.
-   - SD_ADDR_GPIO_DRV_IsPinIntPending -Reads the individual pin-interrupt status flag.
-   - SD_ADDR_GPIO_DRV_ClearPinIntFlag -Clears the individual GPIO pin interrupt status flag.
+Module "SD_ADDR_CTRL" (component fsl_gpio)
+   - SD_ADDR_CTRL_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
+   - SD_ADDR_CTRL_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.
+   - SD_ADDR_CTRL_GPIO_DRV_OutputPinInit -Initializes one GPIO output pin used by the board.
+   - SD_ADDR_CTRL_GPIO_DRV_GetPinDir -Gets the current direction of the individual GPIO pin.
+   - SD_ADDR_CTRL_GPIO_DRV_SetPinDir -Sets the current direction of the individual GPIO pin.
+   - SD_ADDR_CTRL_GPIO_DRV_WritePinOutput -Sets the output level of the individual GPIO pin to the logic 1 or 0.
+   - SD_ADDR_CTRL_GPIO_DRV_SetPinOutput -Sets the output level of the individual GPIO pin to the logic 1.
+   - SD_ADDR_CTRL_GPIO_DRV_ClearPinOutput -Sets the output level of the individual GPIO pin to the logic 0.
+   - SD_ADDR_CTRL_GPIO_DRV_TogglePinOutput -Reverses current output logic of the individual GPIO pin.
+   - SD_ADDR_CTRL_GPIO_DRV_ReadPinInput -Reads the current input value of the individual GPIO pin.
+   - SD_ADDR_CTRL_GPIO_DRV_SetDigitalFilterCmd -Enables or disables the digital filter in a single port.
+   - SD_ADDR_CTRL_GPIO_DRV_IsPinIntPending -Reads the individual pin-interrupt status flag.
+   - SD_ADDR_CTRL_GPIO_DRV_ClearPinIntFlag -Clears the individual GPIO pin interrupt status flag.
 
-Module "SD_CTRL"   (component fsl_gpio)
-   - SD_CTRL_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
-   - SD_CTRL_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.
-   - SD_CTRL_GPIO_DRV_OutputPinInit -Initializes one GPIO output pin used by the board.
-   - SD_CTRL_GPIO_DRV_GetPinDir -Gets the current direction of the individual GPIO pin.
-   - SD_CTRL_GPIO_DRV_SetPinDir -Sets the current direction of the individual GPIO pin.
-   - SD_CTRL_GPIO_DRV_WritePinOutput -Sets the output level of the individual GPIO pin to the logic 1 or 0.
-   - SD_CTRL_GPIO_DRV_SetPinOutput -Sets the output level of the individual GPIO pin to the logic 1.
-   - SD_CTRL_GPIO_DRV_ClearPinOutput -Sets the output level of the individual GPIO pin to the logic 0.
-   - SD_CTRL_GPIO_DRV_TogglePinOutput -Reverses current output logic of the individual GPIO pin.
-   - SD_CTRL_GPIO_DRV_ReadPinInput -Reads the current input value of the individual GPIO pin.
-   - SD_CTRL_GPIO_DRV_SetDigitalFilterCmd -Enables or disables the digital filter in a single port.
-   - SD_CTRL_GPIO_DRV_IsPinIntPending -Reads the individual pin-interrupt status flag.
-   - SD_CTRL_GPIO_DRV_ClearPinIntFlag -Clears the individual GPIO pin interrupt status flag.
+Module "SD_CLK"    (component fsl_gpio)
+   - SD_CLK_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
+   - SD_CLK_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.
+   - SD_CLK_GPIO_DRV_OutputPinInit -Initializes one GPIO output pin used by the board.
+   - SD_CLK_GPIO_DRV_GetPinDir -Gets the current direction of the individual GPIO pin.
+   - SD_CLK_GPIO_DRV_SetPinDir -Sets the current direction of the individual GPIO pin.
+   - SD_CLK_GPIO_DRV_WritePinOutput -Sets the output level of the individual GPIO pin to the logic 1 or 0.
+   - SD_CLK_GPIO_DRV_SetPinOutput -Sets the output level of the individual GPIO pin to the logic 1.
+   - SD_CLK_GPIO_DRV_ClearPinOutput -Sets the output level of the individual GPIO pin to the logic 0.
+   - SD_CLK_GPIO_DRV_TogglePinOutput -Reverses current output logic of the individual GPIO pin.
+   - SD_CLK_GPIO_DRV_ReadPinInput -Reads the current input value of the individual GPIO pin.
+   - SD_CLK_GPIO_DRV_SetDigitalFilterCmd -Enables or disables the digital filter in a single port.
+   - SD_CLK_GPIO_DRV_IsPinIntPending -Reads the individual pin-interrupt status flag.
+   - SD_CLK_GPIO_DRV_ClearPinIntFlag -Clears the individual GPIO pin interrupt status flag.
 
-Module "lpTmr1"    (component fsl_lptmr)
-   - lpTmr1_LPTMR_DRV_Init -Initializes the LPTMR driver.
-   - lpTmr1_LPTMR_DRV_Deinit -De-initializes the LPTMR driver.
-   - lpTmr1_LPTMR_DRV_Start -Starts the LPTMR counter.
-   - lpTmr1_LPTMR_DRV_Stop -Stops the LPTMR counter.
-   - lpTmr1_LPTMR_DRV_SetTimerPeriodUs -Configures the LPTMR timer period in microseconds.
-   - lpTmr1_LPTMR_DRV_GetCurrentTimeUs -Gets the current LPTMR time in microseconds.
-   - lpTmr1_LPTMR_DRV_SetPulsePeriodCount -Sets the pulse period value.
-   - lpTmr1_LPTMR_DRV_GetCurrentPulseCount -Gets the current pulse count.
-   - lpTmr1_LPTMR_DRV_InstallCallback -Installs the user-defined callback in the LPTMR module.
-   - lpTmr1_LPTMR_DRV_IRQHandler -Driver-defined ISR in the LPTMR module.
+Module "CLK12M_IN" (component fsl_gpio)
+   - CLK12M_IN_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
+   - CLK12M_IN_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.
+   - CLK12M_IN_GPIO_DRV_OutputPinInit -Initializes one GPIO output pin used by the board.
+   - CLK12M_IN_GPIO_DRV_GetPinDir -Gets the current direction of the individual GPIO pin.
+   - CLK12M_IN_GPIO_DRV_SetPinDir -Sets the current direction of the individual GPIO pin.
+   - CLK12M_IN_GPIO_DRV_WritePinOutput -Sets the output level of the individual GPIO pin to the logic 1 or 0.
+   - CLK12M_IN_GPIO_DRV_SetPinOutput -Sets the output level of the individual GPIO pin to the logic 1.
+   - CLK12M_IN_GPIO_DRV_ClearPinOutput -Sets the output level of the individual GPIO pin to the logic 0.
+   - CLK12M_IN_GPIO_DRV_TogglePinOutput -Reverses current output logic of the individual GPIO pin.
+   - CLK12M_IN_GPIO_DRV_ReadPinInput -Reads the current input value of the individual GPIO pin.
+   - CLK12M_IN_GPIO_DRV_SetDigitalFilterCmd -Enables or disables the digital filter in a single port.
+   - CLK12M_IN_GPIO_DRV_IsPinIntPending -Reads the individual pin-interrupt status flag.
+   - CLK12M_IN_GPIO_DRV_ClearPinIntFlag -Clears the individual GPIO pin interrupt status flag.
 
-Module "gpio1"     (component fsl_gpio)
-   - gpio1_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
-   - gpio1_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.
-   - gpio1_GPIO_DRV_OutputPinInit -Initializes one GPIO output pin used by the board.
-   - gpio1_GPIO_DRV_GetPinDir -Gets the current direction of the individual GPIO pin.
-   - gpio1_GPIO_DRV_SetPinDir -Sets the current direction of the individual GPIO pin.
-   - gpio1_GPIO_DRV_WritePinOutput -Sets the output level of the individual GPIO pin to the logic 1 or 0.
-   - gpio1_GPIO_DRV_SetPinOutput -Sets the output level of the individual GPIO pin to the logic 1.
-   - gpio1_GPIO_DRV_ClearPinOutput -Sets the output level of the individual GPIO pin to the logic 0.
-   - gpio1_GPIO_DRV_TogglePinOutput -Reverses current output logic of the individual GPIO pin.
-   - gpio1_GPIO_DRV_ReadPinInput -Reads the current input value of the individual GPIO pin.
-   - gpio1_GPIO_DRV_SetDigitalFilterCmd -Enables or disables the digital filter in a single port.
-   - gpio1_GPIO_DRV_IsPinIntPending -Reads the individual pin-interrupt status flag.
-   - gpio1_GPIO_DRV_ClearPinIntFlag -Clears the individual GPIO pin interrupt status flag.
+Module "CrossBar1" (component fsl_xbar)
+   - CrossBar1_XBAR_DRV_Init -Initializes the XBAR modules.
+   - CrossBar1_XBAR_DRV_Deinit -De-initializes the XBAR module.
+   - CrossBar1_XBAR_DRV_ConfigSignalConnection -Configures connection between the selected XBAR_IN[*] input and the XBAR_OUT[*] 
+                output signal.
+   - CrossBar1_XBAR_DRV_ConfigOutControl -Configures the XBAR control register.
+   - CrossBar1_XBAR_DRV_GetEdgeDetectionStatus -Gets the active edge detection status.
+   - CrossBar1_XBAR_DRV_ClearEdgeDetectionStatus -Clears the status flag of the edge detection status flag for a desired 
+                XBAR_OUT.
+   - CrossBar1_XBAR_DRV_InstallCallback -Installs the callback function for the XBAR module.
+   - CrossBar1_XBAR_DRV_IRQHandler -Driver-defined ISR in XBAR module.
 
 Module "Cpu"       (component MKV58F1M0LQ22)
    - Cpu_SystemInit -This method configures the oscillator (PLL) that is part of the microcontroller device. SystemInit is 

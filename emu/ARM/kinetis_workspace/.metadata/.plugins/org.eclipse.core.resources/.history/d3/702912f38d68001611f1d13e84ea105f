@@ -1,0 +1,258 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_CompilerCpp_SearchUserPaths</name>
+      <values lines_count="50">
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/src/sim/MKV58F22"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/src/clock/MKV58F22"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/src/sim/MKV58F22"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/osa/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/osa/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/src/sim/MKV58F22"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/MKV58F22/include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/MKV58F22/startup"</Line>
+        <Line>"${ProjDirPath}/Generated_Code/SDK/platform/devices/MKV58F22/startup"</Line>
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Asm_Defines</name>
+      <values lines_count="1">
+        <Line>"FSL_OSA_BM_TIMER_CONFIG=2"</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ToolChain_CompilerCpp_Defines</name>
+      <values lines_count="1">
+        <Line>"FSL_OSA_BM_TIMER_CONFIG=2"</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Linker_OtherC</name>
+      <value>-specs=nosys.specs -specs=nano.specs</value>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_Defines</name>
+      <values lines_count="1">
+        <Line>"FSL_OSA_BM_TIMER_CONFIG=2"</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="50">
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/src/sim/MKV58F22"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/src/clock/MKV58F22"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/src/sim/MKV58F22"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/osa/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/osa/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/src/sim/MKV58F22"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/MKV58F22/include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/MKV58F22/startup"</Line>
+        <Line>"${ProjDirPath}/Generated_Code/SDK/platform/devices/MKV58F22/startup"</Line>
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Linker_OtherCpp</name>
+      <value>-specs=nosys.specs -specs=nano.specs</value>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ilg_gnuarmeclipse_managedbuild_cross_option_c_compiler_defs</name>
+      <values lines_count="1">
+        <Line>"CPU_MKV58F1M0VLQ22"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="SDK/platform/drivers/src/ftm/fsl_ftm_driver.c" FileDate="1970-01-01, 08:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="Generated_Code/SD_CTRL.h" FileDate="2016-08-21, 20:39:11" FileAge="1471779551078" FileType="45637" CompNumb="54" />
+      <File Name="ProjectInfo.xml" FileDate="2016-08-22, 23:37:41" FileAge="1471876661941" FileType="45637" />
+      <File Name="Generated_Code/SD_CTRL.c" FileDate="2016-08-21, 20:39:11" FileAge="1471779551077" FileType="45637" CompNumb="54" />
+      <File Name="Generated_Code/pitTimer1.h" FileDate="2016-08-21, 23:26:47" FileAge="1471789607661" FileType="45637" CompNumb="39" />
+      <File Name="SDK/platform/CMSIS/Include/arm_const_structs.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399054" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/devices/startup.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399061" FileType="1048576" CompNumb="4" />
+      <File Name="Generated_Code/pitTimer1.c" FileDate="2016-08-21, 23:35:15" FileAge="1471790115327" FileType="45637" CompNumb="39" />
+      <File Name="SDK/platform/drivers/src/lptmr/fsl_lptmr_driver.c" FileDate="2016-08-22, 11:06:22" FileAge="1471831582580" FileType="1048576" CompNumb="86" />
+      <File Name="SDK/platform/devices/startup.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399061" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/devices/MKV58F22/include/MKV58F22_features.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399061" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/drivers/inc/fsl_gpio_driver.h" FileDate="2016-08-21, 04:21:50" FileAge="1471720910752" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/CMSIS/Include/core_cmInstr.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399054" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/system/inc/fsl_interrupt_manager.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399050" FileType="1048576" CompNumb="17" />
+      <File Name="SDK/platform/hal/inc/fsl_mcg_hal_modes.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399042" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/hal/src/sim/MKV58F22/fsl_sim_hal_MKV58F22.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399043" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/hal/inc/fsl_port_hal.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399048" FileType="1048576" CompNumb="0" />
+      <File Name="Generated_Code/SD_ADDR.h" FileDate="2016-08-21, 21:04:11" FileAge="1471781051373" FileType="45637" CompNumb="50" />
+      <File Name="SDK/platform/hal/src/sim/MKV58F22/fsl_sim_hal_MKV58F22.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399043" FileType="1048576" CompNumb="0" />
+      <File Name="Documentation/Q8Emu_KV58_SDK12.txt" FileDate="2016-08-22, 23:37:41" FileAge="1471876661943" FileType="3072" />
+      <File Name="SDK/platform/drivers/src/uart/fsl_uart_common.c" FileDate="2016-08-20, 08:41:41" FileAge="1471650101884" FileType="1048576" CompNumb="30" />
+      <File Name="Generated_Code/SD_ADDR.c" FileDate="2016-08-21, 21:04:11" FileAge="1471781051376" FileType="45637" CompNumb="50" />
+      <File Name="Static_Code/System/PE_low_level_init.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399063" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/hal/inc/fsl_sim_hal.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399042" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/hal/src/ftm/fsl_ftm_hal.c" FileDate="1970-01-01, 08:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/hal/inc/fsl_ftm_hal.h" FileDate="1970-01-01, 08:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/pit/fsl_pit_common.c" FileDate="2016-08-21, 04:17:11" FileAge="1471720631420" FileType="1048576" CompNumb="39" />
+      <File Name="SDK/platform/hal/inc/fsl_uart_hal.h" FileDate="2016-08-20, 08:41:41" FileAge="1471650101884" FileType="1048576" CompNumb="31" />
+      <File Name="SDK/platform/drivers/src/gpio/fsl_gpio_common.c" FileDate="2016-08-21, 04:21:50" FileAge="1471720910749" FileType="1048576" CompNumb="0" />
+      <File Name="Sources/main.c" FileDate="2016-08-22, 23:55:38" FileAge="1471877738565" FileType="128" />
+      <File Name="SDK/platform/hal/src/port/fsl_port_hal.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399048" FileType="1048576" CompNumb="0" />
+      <File Name="Generated_Code/LED.h" FileDate="2016-08-21, 10:04:45" FileAge="1471741485514" FileType="45637" CompNumb="41" />
+      <File Name="SDK/platform/hal/inc/fsl_dmamux_hal.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399050" FileType="1048576" CompNumb="18" />
+      <File Name="Generated_Code/LED.c" FileDate="2016-08-21, 15:39:52" FileAge="1471761592275" FileType="45637" CompNumb="41" />
+      <File Name="Documentation/doxygen/RoutingReport_component.txt" FileDate="2016-08-22, 23:37:39" FileAge="1471876659598" FileType="45637" CompNumb="4" />
+      <File Name="SDK/platform/hal/src/mcg/fsl_mcg_hal.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399040" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/osa/inc/fsl_os_abstraction_bm.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399052" FileType="1048576" CompNumb="14" />
+      <File Name="SDK/platform/drivers/src/uart/fsl_uart_driver.c" FileDate="2016-08-20, 08:41:41" FileAge="1471650101884" FileType="1048576" CompNumb="30" />
+      <File Name="Documentation/Q8Emu_KV58_SDK12_Settings.xml" FileDate="2016-08-22, 23:37:40" FileAge="1471876660416" FileType="3072" />
+      <File Name="SDK/platform/hal/src/gpio/fsl_gpio_hal.c" FileDate="2016-08-21, 04:21:50" FileAge="1471720910745" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/hal/src/pit/fsl_pit_hal.c" FileDate="2016-08-21, 04:17:11" FileAge="1471720631405" FileType="1048576" CompNumb="40" />
+      <File Name="Generated_Code/SD_DQ.h" FileDate="2016-08-21, 15:37:00" FileAge="1471761420391" FileType="45637" CompNumb="46" />
+      <File Name="Generated_Code/lpTmr1.h" FileDate="2016-08-22, 23:05:49" FileAge="1471874749190" FileType="45637" CompNumb="86" />
+      <File Name="Generated_Code/osa1.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399071" FileType="45637" CompNumb="14" />
+      <File Name="SDK/platform/hal/src/dmamux/fsl_dmamux_hal.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399050" FileType="1048576" CompNumb="18" />
+      <File Name="SDK/platform/drivers/inc/fsl_pit_driver.h" FileDate="2016-08-21, 04:17:11" FileAge="1471720631423" FileType="1048576" CompNumb="39" />
+      <File Name="Generated_Code/SD_DQ.c" FileDate="2016-08-21, 15:37:00" FileAge="1471761420392" FileType="45637" CompNumb="46" />
+      <File Name="Generated_Code/lpTmr1.c" FileDate="2016-08-22, 23:05:49" FileAge="1471874749191" FileType="45637" CompNumb="86" />
+      <File Name="SDK/platform/hal/src/mcg/fsl_mcg_hal_modes.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399041" FileType="1048576" CompNumb="0" />
+      <File Name="Generated_Code/osa1.c" FileDate="2016-08-22, 22:46:10" FileAge="1471873570043" FileType="45637" CompNumb="14" />
+      <File Name="SDK/platform/hal/src/osc/fsl_osc_hal.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399043" FileType="1048576" CompNumb="8" />
+      <File Name="SDK/platform/drivers/src/pit/fsl_pit_driver.c" FileDate="2016-08-21, 04:17:11" FileAge="1471720631422" FileType="1048576" CompNumb="39" />
+      <File Name="Generated_Code/clockMan1.h" FileDate="2016-08-21, 05:50:20" FileAge="1471726220047" FileType="45637" CompNumb="5" />
+      <File Name="SDK/platform/system/src/clock/fsl_clock_manager.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399045" FileType="1048576" CompNumb="5" />
+      <File Name="SDK/platform/drivers/src/gpio/fsl_gpio_driver.c" FileDate="2016-08-21, 04:21:50" FileAge="1471720910751" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/hal/inc/fsl_pit_hal.h" FileDate="2016-08-21, 04:17:11" FileAge="1471720631407" FileType="1048576" CompNumb="40" />
+      <File Name="Generated_Code/clockMan1.c" FileDate="2016-08-22, 14:09:17" FileAge="1471842557466" FileType="45637" CompNumb="5" />
+      <File Name="SDK/platform/CMSIS/Include/core_cm7.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399052" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/drivers/inc/fsl_uart_driver.h" FileDate="2016-08-20, 08:41:41" FileAge="1471650101884" FileType="1048576" CompNumb="30" />
+      <File Name="SDK/platform/system/src/clock/fsl_clock_manager_common.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399046" FileType="1048576" CompNumb="5" />
+      <File Name="SDK/platform/system/src/interrupt/fsl_interrupt_manager.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399050" FileType="1048576" CompNumb="17" />
+      <File Name="SDK/platform/devices/MKV58F22/include/fsl_bitaccess.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399056" FileType="1048576" CompNumb="4" />
+      <File Name="Generated_Code/board.h" FileDate="2016-08-21, 14:28:59" FileAge="1471757339317" FileType="45637" CompNumb="9" />
+      <File Name="Documentation/doxygen/pex.css" FileDate="2016-08-12, 09:23:18" FileAge="1470961398571" FileType="16384" CompNumb="4" />
+      <File Name="SDK/platform/hal/inc/fsl_gpio_hal.h" FileDate="2016-08-21, 04:21:50" FileAge="1471720910747" FileType="1048576" CompNumb="0" />
+      <File Name="Sources/Events.h" FileDate="2016-08-22, 23:37:39" FileAge="1471876659599" FileType="131328" />
+      <File Name="SDK/platform/devices/MKV58F22/startup/gcc/startup_MKV58F22.S" FileDate="2016-08-12, 09:23:19" FileAge="1470961399062" FileType="1048576" CompNumb="4" />
+      <File Name="Sources/Events.c" FileDate="2016-08-22, 23:06:19" FileAge="1471874779793" FileType="131328" />
+      <File Name="SDK/platform/devices/fsl_device_registers.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399055" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/hal/inc/fsl_mcg_hal.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399041" FileType="1048576" CompNumb="0" />
+      <File Name="Generated_Code/PE_low_level_init.h" FileDate="2016-08-22, 14:09:16" FileAge="1471842556845" FileType="45637" CompNumb="4" />
+      <File Name="SDK/platform/drivers/inc/fsl_ftm_driver.h" FileDate="1970-01-01, 08:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="Generated_Code/hardware_init.c" FileDate="2016-08-22, 11:06:22" FileAge="1471831582751" FileType="45637" CompNumb="9" />
+      <File Name="SDK/platform/hal/inc/fsl_lptmr_hal.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399045" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/osa/inc/fsl_os_abstraction.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399052" FileType="1048576" CompNumb="14" />
+      <File Name="Generated_Code/uartCom1.h" FileDate="2016-08-20, 08:41:42" FileAge="1471650102022" FileType="45637" CompNumb="30" />
+      <File Name="SDK/platform/CMSIS/Include/core_cmFunc.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399053" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/hal/inc/fsl_osc_hal.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399044" FileType="1048576" CompNumb="8" />
+      <File Name="Generated_Code/pin_mux.h" FileDate="2016-08-22, 11:06:22" FileAge="1471831582748" FileType="45637" CompNumb="9" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2016-08-22, 11:06:22" FileAge="1471831582754" FileType="45637" CompNumb="4" />
+      <File Name="Project_Settings/Linker_Files/ProcessorExpert.ld" FileDate="2016-08-21, 07:09:22" FileAge="1471730962447" FileType="8" CompNumb="4" />
+      <File Name="Generated_Code/uartCom1.c" FileDate="2016-08-20, 08:41:42" FileAge="1471650102021" FileType="45637" CompNumb="30" />
+      <File Name="Generated_Code/pin_mux.c" FileDate="2016-08-22, 23:37:39" FileAge="1471876659594" FileType="45637" CompNumb="9" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2016-08-22, 23:37:39" FileAge="1471876659596" FileType="45637" CompNumb="4" />
+      <File Name="SDK/platform/hal/inc/fsl_xbar_hal.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399049" FileType="1048576" CompNumb="13" />
+      <File Name="SDK/platform/osa/src/fsl_os_abstraction_bm.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399051" FileType="1048576" CompNumb="14" />
+      <File Name="SDK/platform/drivers/src/ftm/fsl_ftm_common.c" FileDate="1970-01-01, 08:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/devices/MKV58F22/startup/system_MKV58F22.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399062" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/system/src/clock/MKV58F22/fsl_clock_MKV58F22.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399047" FileType="1048576" CompNumb="5" />
+      <File Name="Documentation/doxygen/pex.doxyfile" FileDate="2016-08-12, 09:23:19" FileAge="1470961399065" FileType="45637" CompNumb="4" />
+      <File Name="SDK/platform/CMSIS/Include/arm_common_tables.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399054" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/drivers/inc/fsl_lptmr_driver.h" FileDate="2016-08-22, 11:06:22" FileAge="1471831582580" FileType="1048576" CompNumb="86" />
+      <File Name="SDK/platform/system/src/clock/MKV58F22/fsl_clock_MKV58F22.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399046" FileType="1048576" CompNumb="5" />
+      <File Name="SDK/platform/hal/src/xbar/fsl_xbar_hal.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399049" FileType="1048576" CompNumb="13" />
+      <File Name="SDK/platform/devices/MKV58F22/include/MKV58F22_extension.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399060" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/hal/inc/fsl_xbar_signals.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399049" FileType="1048576" CompNumb="13" />
+      <File Name="SDK/platform/CMSIS/Include/arm_math.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399055" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/system/inc/fsl_clock_manager.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399047" FileType="1048576" CompNumb="5" />
+      <File Name="SDK/platform/drivers/src/lptmr/fsl_lptmr_common.c" FileDate="2016-08-22, 11:06:22" FileAge="1471831582579" FileType="1048576" CompNumb="86" />
+      <File Name="Documentation/doxygen/Q8Emu_KV58_SDK12_project.txt" FileDate="2016-08-12, 09:23:19" FileAge="1470961399066" FileType="45637" CompNumb="4" />
+      <File Name="SDK/platform/devices/MKV58F22/include/MKV58F22.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399057" FileType="1048576" CompNumb="4" />
+      <File Name="Generated_Code/gpio1.h" FileDate="2016-08-22, 23:37:39" FileAge="1471876659578" FileType="45637" CompNumb="94" />
+      <File Name="Generated_Code/SDK/platform/devices/MKV58F22/startup/system_MKV58F22.h" FileDate="2016-08-22, 14:09:17" FileAge="1471842557467" FileType="45637" CompNumb="5" />
+      <File Name="SDK/platform/hal/src/lptmr/fsl_lptmr_hal.c" FileDate="2016-08-12, 09:23:19" FileAge="1470961399044" FileType="1048576" CompNumb="0" />
+      <File Name="Generated_Code/gpio1.c" FileDate="2016-08-22, 23:37:39" FileAge="1471876659577" FileType="45637" CompNumb="94" />
+      <File Name="SDK/platform/hal/src/uart/fsl_uart_hal.c" FileDate="2016-08-20, 08:41:41" FileAge="1471650101884" FileType="1048576" CompNumb="31" />
+      <File Name="SDK/platform/CMSIS/Include/core_cmSimd.h" FileDate="2016-08-12, 09:23:19" FileAge="1470961399053" FileType="1048576" CompNumb="4" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>59</CodeGenReference>
+</CodeGenerationInfo>

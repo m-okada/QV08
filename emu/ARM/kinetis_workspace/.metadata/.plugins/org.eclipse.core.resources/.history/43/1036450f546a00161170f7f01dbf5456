@@ -1,0 +1,19 @@
+/*
+ * sdram.h
+ *
+ *  Created on: 2016/08/21
+ *      Author: nic
+ */
+
+#ifndef SOURCES_SDRAM_H_
+#define SOURCES_SDRAM_H_
+
+void sd_init(void);
+void sd_set_cmd(int cmd, int op) ;
+
+int sd_refresh(void) ;
+
+int sd_read_byte(int addr) ;
+void sd_write_byte(int addr, int value) ;
+
+#endif /* SOURCES_SDRAM_H_ */

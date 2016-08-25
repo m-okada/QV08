@@ -37,10 +37,11 @@
 #include "pitTimer1.h"
 #include "LED.h"
 #include "SD_DQ.h"
-#include "SD_ADDR.h"
-#include "SD_CTRL.h"
+#include "SD_ADDR_CTRL.h"
+#include "SD_CLK.h"
 #include "lpTmr1.h"
-#include "gpio1.h"
+#include "CLK12M_IN.h"
+#include "CrossBar1.h"
 #if CPU_INIT_CONFIG
   #include "Init_Config.h"
 #endif
@@ -48,6 +49,8 @@
 #include "sdram.h"
 
 extern int clock_count ;
+extern int reflesh_req ;
+
 volatile uint32_t d_clk ;
 uint32_t clka[128] ;
 
@@ -64,20 +67,36 @@ int main(void)
 	PE_low_level_init();
 	/*** End of Processor Expert internal initialization.                    ***/
 	sdram_init() ;
-	// GPIOD_PDDR=0 ;
+	GPIOD_PDDR=1 ;
 
 	/* Write your code here */
-	lptmr_status_t r=LPTMR_DRV_Start(0) ;
+	/*lptmr_status_t r=*/ (void)LPTMR_DRV_Start(0) ;
 	/* For example: for(;;) { } */
+
+	for(i=0 ; i<4 ; i++){
+		GPIOD_PSOR=1 ;
+		GPIOD_PCOR=1 ;
+		GPIOD_PSOR=1 ;
+		GPIOD_PCOR=1 ;
+		GPIOD_PSOR=1 ;
+		GPIOD_PCOR=1 ;
+		__asm__("nop") ;
+		GPIOD_PSOR=1 ;
+		__asm__("nop") ;
+		__asm__("nop") ;
+		GPIOD_PCOR=1 ;
+	}
+
 	for(;;){
 		//clk1=LPTMR_DRV_GetCurrentPulseCount(0);
 		//clk2=LPTMR_DRV_GetCurrentPulseCount(0);
 		//d_clk=clk2-clk1 ;
-		for(i=0 ; i<100 ; i++){
-			clka[i]=GPIOA_PDIR ;
-		}
 		*p=0UL ;
 		clk1=*p ;
+		for(i=0 ; i<100 ; i++){
+//			clka[i]=GPIOA_PDIR ;
+			if(GPIOA_PDIR & 0x01000000) break ;
+		}
 		*p=0UL ;
 		clk2=*p ;
 		d_clk=clk2-clk1 ;

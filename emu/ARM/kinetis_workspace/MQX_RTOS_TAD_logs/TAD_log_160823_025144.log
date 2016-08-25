@@ -1,0 +1,249 @@
+(02:45:12.569) INFO: [TadState] TAD state init (NONE)
+(02:47:01.525) INFO: [TadModel] DSF session ID 0 has started
+(02:47:03.974) INFO: [TadState] TAD state changed from DEBUG_STARTED to DEBUG_INIT_0 (Suspended, USER_REQUEST)
+(02:47:07.138) INFO: [TadState] TAD state changed from DEBUG_INIT_0 to DEBUG_INIT_1 (Resumed, USER_REQUEST)
+(02:47:07.207) INFO: [TadState] TAD state changed from DEBUG_INIT_1 to DEBUG_SUSPENDED (Suspended, BREAKPOINT)
+(02:47:11.312) INFO: [TadState] TAD state changed from DEBUG_SUSPENDED to DEBUG_RESUMED (Resumed, STEP)
+(02:47:11.440) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(02:47:11.947) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:47:11.947) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:47:11.947) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:47:11.947) INFO: [TadModel$3] Loading of TAD Global Status took 504 ms
+(02:47:11.947) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:47:13.269) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(02:47:13.433) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(02:47:13.935) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:47:13.935) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:47:13.935) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:47:13.935) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:47:13.935) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:47:17.007) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:47:17.065) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:47:17.567) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:47:17.567) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:47:17.567) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:47:17.567) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:47:17.567) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:47:19.451) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(02:47:19.511) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(02:47:20.014) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:47:20.014) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:47:20.014) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:47:20.014) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:47:20.014) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:48:19.812) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:48:19.871) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:48:20.373) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:48:20.373) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:48:20.373) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:48:20.373) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:48:20.373) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:48:23.348) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:48:23.472) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:48:23.974) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:48:23.974) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:48:23.974) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:48:23.974) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:48:23.974) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:48:28.721) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:48:28.853) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:48:29.356) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:48:29.356) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:48:29.356) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:48:29.356) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:48:29.356) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:48:30.831) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:48:30.962) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:48:31.464) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:48:31.464) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:48:31.464) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:48:31.464) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:48:31.464) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:48:32.513) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:48:32.644) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:48:33.146) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:48:33.146) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:48:33.146) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:48:33.146) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:48:33.146) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:48:34.114) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:48:34.244) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:48:34.746) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:48:34.746) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:48:34.746) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:48:34.746) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:48:34.746) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:48:35.559) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:48:35.690) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:48:36.193) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:48:36.193) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:48:36.193) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:48:36.193) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:48:36.193) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:49:11.103) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:49:11.234) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:49:11.736) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:49:11.736) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:49:11.736) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:49:11.736) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:49:11.736) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:49:12.738) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:49:12.870) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:49:13.372) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:49:13.372) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:49:13.372) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:49:13.372) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:49:13.372) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:49:15.084) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:49:15.218) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:49:15.720) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:49:15.720) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:49:15.720) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:49:15.720) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:49:15.720) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:49:16.593) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:49:16.724) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:49:17.226) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:49:17.226) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:49:17.226) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:49:17.226) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:49:17.226) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:49:17.849) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:49:17.981) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:49:18.483) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:49:18.483) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:49:18.483) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:49:18.483) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:49:18.483) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:49:18.925) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:49:19.054) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:49:19.556) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:49:19.556) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:49:19.556) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:49:19.556) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:49:19.556) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:49:20.412) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:49:20.545) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:49:21.047) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:49:21.047) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:49:21.047) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:49:21.047) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:49:21.047) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:49:21.791) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:49:21.921) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:49:22.423) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:49:22.423) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:49:22.423) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:49:22.423) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:49:22.423) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:39.012) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:39.140) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:39.642) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:39.642) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:39.642) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:39.642) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:39.642) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:43.042) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:43.174) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:43.676) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:43.676) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:43.676) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:43.676) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:43.676) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:44.363) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:44.496) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:44.998) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:44.998) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:44.998) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:44.998) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:44.998) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:45.477) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:45.610) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:46.112) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:46.112) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:46.112) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:46.112) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:46.112) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:46.453) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:46.584) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:47.086) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:47.086) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:47.086) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:47.086) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:47.086) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:47.476) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:47.609) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:48.111) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:48.111) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:48.111) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:48.111) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:48.111) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:48.628) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:48.758) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:49.261) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:49.261) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:49.261) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:49.261) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:49.261) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:49.510) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:49.643) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:50.145) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:50.145) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:50.145) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:50.145) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:50.145) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:50.364) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:50.498) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:51.000) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:51.000) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:51.000) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:51.000) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:51.000) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:51.118) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:51.251) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:51.753) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:51.753) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:51.753) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:51.753) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:51.753) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:51.959) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:52.088) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:52.590) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:52.590) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:52.590) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:52.590) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:52.590) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:52.769) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:52.900) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:53.402) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:53.402) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:53.402) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:53.402) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:53.402) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:53.648) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:53.780) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:54.083) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:54.213) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:54.282) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:54.282) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:54.282) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:54.282) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:54.783) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:54.783) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:54.783) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:54.783) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:54.783) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:50:59.069) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:50:59.199) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:50:59.701) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:50:59.701) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:50:59.701) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:50:59.701) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:50:59.701) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(02:51:02.125) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(02:51:02.257) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(02:51:02.759) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(02:51:02.759) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(02:51:02.759) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(02:51:02.759) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(02:51:02.759) INFO: [TadGlobalStatusController] TAD global status data is ready!
